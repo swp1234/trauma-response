@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "page_title": "Trauma Response Test - Fight, Flight, Freeze, or Fawn? | DopaBrain",
+    "description": "Is your trauma response Fight, Flight, Freeze, or Fawn? 8 questions reveal your nervous system's survival pattern and how it shapes your relationships.",
+    "keywords": "trauma response test, fight flight freeze fawn, trauma response quiz, nervous system test, 4F trauma response, PTSD quiz, trauma type test, survival response, polyvagal theory, trauma healing",
+    "og_title": "Trauma Response Test - Fight, Flight, Freeze, or Fawn?",
+    "og_description": "8 questions reveal your survival pattern! Discover your nervous system's default response.",
+    "twitter_title": "Trauma Response Test - Fight, Flight, Freeze, or Fawn?",
+    "twitter_description": "8 questions reveal your survival pattern!"
+  },
+  "app": {
+    "skipLink": "Skip to main",
+    "loading": "Loading..."
+  },
+  "intro": {
+    "title": "Trauma Response Test",
+    "subtitle": "Fight, Flight, Freeze, or Fawn?",
+    "social_proof": "people discovered",
+    "feature_types": "4 response types",
+    "feature_questions": "8 scenarios",
+    "feature_metrics": "5 dimensions",
+    "time_estimate": "Takes about 2 minutes"
+  },
+  "carousel": {
+    "fight": "Fight",
+    "flight": "Flight",
+    "freeze": "Freeze",
+    "fawn": "Fawn"
+  },
+  "button": {
+    "start": "Discover Your Response",
+    "retry": "Try Again",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copy Link"
+  },
+  "question": {
+    "0": "Someone suddenly yells at you angrily. What's your first reaction?",
+    "0a": "I fire back immediately and confront them about why",
+    "0b": "I quickly leave the situation or change the subject",
+    "0c": "My mind goes blank and I can't say anything",
+    "0d": "I apologize first and try to calm them down",
+
+    "1": "When you're treated unfairly at work, what's your pattern?",
+    "1a": "I express my anger and immediately raise the issue",
+    "1b": "I start browsing job sites or throw myself into other work",
+    "1c": "I go numb and think 'that's just how it is'",
+    "1d": "I try to understand my boss's position and work even harder",
+
+    "2": "When you find out a close friend shared your secret with others?",
+    "2a": "I confront them directly and firmly",
+    "2b": "I cut contact and create distance",
+    "2c": "I feel betrayed and freeze, unable to do anything",
+    "2d": "I rationalize that they must have had a good reason",
+
+    "3": "Right before an important deadline, an unexpected problem arises?",
+    "3a": "I pour all my energy into finding and fixing the cause",
+    "3b": "I handle other urgent tasks first, avoiding the real problem",
+    "3c": "I panic and nothing seems manageable",
+    "3d": "I ask everyone around for help and follow their suggestions",
+
+    "4": "Your partner suddenly says 'we need to talk.' Your reaction?",
+    "4a": "I get defensive — 'What did I do wrong?'",
+    "4b": "Anxiety hits and I start running worst-case scenarios in my head",
+    "4c": "My emotions shut down and I just sit there blankly",
+    "4d": "I immediately say 'I'll change, what do you want?'",
+
+    "5": "Late at night, a bad memory suddenly surfaces. What do you do?",
+    "5a": "Anger rises and I punch a pillow or exercise",
+    "5b": "I turn on Netflix or scroll social media to escape",
+    "5c": "My body freezes and I just stare at the ceiling",
+    "5d": "I text someone and start a casual conversation pretending I'm fine",
+
+    "6": "You make a mistake in front of a crowd. Your response?",
+    "6a": "I brush it off confidently or deflect blame",
+    "6b": "My face burns red and I want to leave immediately",
+    "6c": "Time seems to stop and I can't react at all",
+    "6d": "I apologize profusely and check everyone's feelings",
+
+    "7": "Reflecting on yourself before sleep, what thought comes first?",
+    "7a": "The world won't leave me alone — I'm always ready to fight",
+    "7b": "I want to escape to somewhere far away from here",
+    "7c": "There's an emptiness where I feel nothing at all",
+    "7d": "I worry whether I've disappointed everyone around me"
+  },
+  "analyzing": {
+    "title": "Analyzing your responses...",
+    "scanning": "Scanning nervous system patterns...",
+    "mapping": "Mapping survival responses...",
+    "integrating": "Building 4F profile...",
+    "complete": "Analysis complete!"
+  },
+  "result": {
+    "your_type": "Your Trauma Response",
+    "response_dimensions": "Response Dimensions",
+    "dimension_scores": "Dimension Scores",
+    "key_traits": "Response Patterns",
+    "coping_tip": "Healing Insight",
+    "percentile": "Only {pct} of people share the {type} response",
+    "moreTests": "Explore More",
+    "share": "Share Your Result"
+  },
+  "metric": {
+    "hypervigilance": "Hypervigilance",
+    "emotional_regulation": "Emotion Regulation",
+    "dissociation": "Dissociation",
+    "boundaries": "Boundaries",
+    "resilience": "Resilience"
+  },
+  "type": {
+    "fight": {
+      "name": "Fight Response",
+      "tagline": "A warrior who never backs down from threat",
+      "description": "Your nervous system switches to combat mode the moment it detects a threat. This powerful survival strategy developed in childhood to protect yourself. You have strong willpower and leadership, but sometimes anger becomes a mask for control and defense. True strength comes from allowing vulnerability.",
+      "trait1": "Immediate anger response",
+      "trait2": "Need for control",
+      "trait3": "Excessive vigilance",
+      "tip": "Explore the emotions hiding behind your anger. Anger is often a shield for fear, sadness, or hurt. Ask yourself: 'Am I really angry right now, or am I scared?'"
+    },
+    "flight": {
+      "name": "Flight Response",
+      "tagline": "A survivor who instinctively runs from danger",
+      "description": "Your nervous system switches to escape mode the moment it detects a threat. This was a crucial strategy that kept you safe in the past. Behind your high productivity and constant activity, there may be an unconscious pattern of avoiding uncomfortable emotions. Stopping is also courage.",
+      "trait1": "Hyperactivity / Workaholism",
+      "trait2": "Avoidant coping",
+      "trait3": "Anxiety and restlessness",
+      "tip": "Notice the avoidance hidden behind your busyness. Try spending just 5 minutes a day doing absolutely nothing. Discomfort isn't a danger signal — it's the starting point of healing."
+    },
+    "freeze": {
+      "name": "Freeze Response",
+      "tagline": "A protective shutdown when overwhelmed",
+      "description": "Your nervous system shifts into shutdown mode when the threat feels too overwhelming. This is a natural response to protect yourself from what feels unbearable. Behind the numbness and dissociation, unprocessed emotions are safely waiting. You can start by feeling small things again.",
+      "trait1": "Emotional numbness",
+      "trait2": "Dissociation / Zoning out",
+      "trait3": "Procrastination patterns",
+      "tip": "Reconnect with small sensations. Dip your hands in warm water or hold an ice cube. Reclaiming your body's sensations is the first step out of freeze."
+    },
+    "fawn": {
+      "name": "Fawn Response",
+      "tagline": "A harmonizer who surrenders self to avoid conflict",
+      "description": "Your nervous system switches to appease-and-please mode when it detects a threat. This clever survival strategy developed in environments where conflict was dangerous. Behind your excellent empathy and relationship skills may hide a fear of losing your 'real self.' Your needs matter too.",
+      "trait1": "Excessive apologizing and yielding",
+      "trait2": "Difficulty setting boundaries",
+      "trait3": "Loss of self-identity",
+      "tip": "Practice one small 'no' every day. Saying no isn't rejecting the other person — it's choosing yourself. Start by asking: 'What do I actually want?'"
+    }
+  },
+  "share": {
+    "text": "My trauma response type is '{type}'! What's your survival pattern?"
+  },
+  "game": {
+    "back": "DopaBrain Home"
+  }
+}
