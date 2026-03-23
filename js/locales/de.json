@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "page_title": "Trauma-Reaktionstest - Kampf, Flucht, Erstarrung oder Anpassung? | DopaBrain",
+    "description": "Ist Ihre Trauma-Reaktion Kampf, Flucht, Erstarrung oder Anpassung? 8 Fragen enthüllen das Überlebensmuster Ihres Nervensystems und wie es Ihre Beziehungen prägt.",
+    "keywords": "Trauma-Reaktionstest, Kampf Flucht Erstarrung Anpassung, Trauma-Reaktionsquiz, Nervensystemtest, 4F-Trauma-Reaktion, PTBS-Quiz, Traumatyp-Test, Überlebensreaktion, Polyvagal-Theorie, Traumaheilung",
+    "og_title": "Trauma-Reaktionstest - Kampf, Flucht, Erstarrung oder Anpassung?",
+    "og_description": "8 Fragen enthüllen Ihr Überlebensmuster! Entdecken Sie die Standardreaktion Ihres Nervensystems.",
+    "twitter_title": "Trauma-Reaktionstest - Kampf, Flucht, Erstarrung oder Anpassung?",
+    "twitter_description": "8 Fragen enthüllen Ihr Überlebensmuster!"
+  },
+  "app": {
+    "skipLink": "Zum Hauptinhalt springen",
+    "loading": "Wird geladen..."
+  },
+  "intro": {
+    "title": "Trauma-Reaktionstest",
+    "subtitle": "Kampf, Flucht, Erstarrung oder Anpassung?",
+    "social_proof": "Personen haben entdeckt",
+    "feature_types": "4 Reaktionstypen",
+    "feature_questions": "8 Szenarien",
+    "feature_metrics": "5 Dimensionen",
+    "time_estimate": "Dauert etwa 2 Minuten"
+  },
+  "carousel": {
+    "fight": "Kampf",
+    "flight": "Flucht",
+    "freeze": "Erstarrung",
+    "fawn": "Anpassung"
+  },
+  "button": {
+    "start": "Entdecken Sie Ihre Reaktion",
+    "retry": "Erneut versuchen",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Link kopieren"
+  },
+  "question": {
+    "0": "Jemand schreit Sie plötzlich wütend an. Was ist Ihre erste Reaktion?",
+    "0a": "Ich schreie sofort zurück und konfrontiere sie mit dem Warum",
+    "0b": "Ich verlasse die Situation schnell oder wechsle das Thema",
+    "0c": "Mein Kopf wird leer und ich kann nichts sagen",
+    "0d": "Ich entschuldige mich zuerst und versuche sie zu beruhigen",
+
+    "1": "Wenn Sie bei der Arbeit unfair behandelt werden, was ist Ihr Muster?",
+    "1a": "Ich drücke meine Wut aus und spreche das Problem sofort an",
+    "1b": "Ich beginne, Jobportale zu durchstöbern oder stürze mich in andere Arbeit",
+    "1c": "Ich werde gefühllos und denke 'so ist das eben'",
+    "1d": "Ich versuche die Position meines Chefs zu verstehen und arbeite noch härter",
+
+    "2": "Wenn Sie herausfinden, dass ein enger Freund Ihr Geheimnis weitergegeben hat?",
+    "2a": "Ich konfrontiere sie direkt und bestimmt",
+    "2b": "Ich breche den Kontakt ab und schaffe Distanz",
+    "2c": "Ich fühle mich verraten und erstarre, kann nichts tun",
+    "2d": "Ich rationalisiere, dass sie einen guten Grund gehabt haben müssen",
+
+    "3": "Kurz vor einer wichtigen Deadline tritt ein unerwartetes Problem auf?",
+    "3a": "Ich setze all meine Energie ein, um die Ursache zu finden und zu beheben",
+    "3b": "Ich kümmere mich zuerst um andere dringende Aufgaben und vermeide das echte Problem",
+    "3c": "Ich gerate in Panik und nichts scheint bewältigbar",
+    "3d": "Ich bitte alle um mich herum um Hilfe und folge ihren Vorschlägen",
+
+    "4": "Ihr Partner sagt plötzlich 'wir müssen reden.' Ihre Reaktion?",
+    "4a": "Ich werde defensiv — 'Was habe ich falsch gemacht?'",
+    "4b": "Angst packt mich und ich male mir die schlimmsten Szenarien aus",
+    "4c": "Meine Emotionen schalten ab und ich sitze nur mit leerem Blick da",
+    "4d": "Ich sage sofort 'Ich werde mich ändern, was willst du?'",
+
+    "5": "Spät nachts taucht plötzlich eine schlimme Erinnerung auf. Was tun Sie?",
+    "5a": "Wut steigt auf und ich schlage auf ein Kissen oder treibe Sport",
+    "5b": "Ich schalte Netflix ein oder scrolle durch soziale Medien zur Flucht",
+    "5c": "Mein Körper erstarrt und ich starre nur an die Decke",
+    "5d": "Ich schreibe jemandem und beginne ein lockeres Gespräch, als ob alles in Ordnung wäre",
+
+    "6": "Sie machen vor einer Menschenmenge einen Fehler. Ihre Reaktion?",
+    "6a": "Ich tue es selbstbewusst ab oder schiebe die Schuld auf andere",
+    "6b": "Mein Gesicht wird rot und ich möchte sofort gehen",
+    "6c": "Die Zeit scheint stillzustehen und ich kann überhaupt nicht reagieren",
+    "6d": "Ich entschuldige mich überschwänglich und prüfe die Gefühle aller",
+
+    "7": "Beim Nachdenken über sich selbst vor dem Schlafengehen, welcher Gedanke kommt zuerst?",
+    "7a": "Die Welt lässt mich nicht in Ruhe — ich bin immer bereit zu kämpfen",
+    "7b": "Ich möchte an einen weit entfernten Ort von hier fliehen",
+    "7c": "Da ist eine Leere, in der ich überhaupt nichts fühle",
+    "7d": "Ich mache mir Sorgen, ob ich alle um mich herum enttäuscht habe"
+  },
+  "analyzing": {
+    "title": "Ihre Antworten werden analysiert...",
+    "scanning": "Nervensystemmuster werden gescannt...",
+    "mapping": "Überlebensreaktionen werden kartiert...",
+    "integrating": "4F-Profil wird erstellt...",
+    "complete": "Analyse abgeschlossen!"
+  },
+  "result": {
+    "your_type": "Ihre Trauma-Reaktion",
+    "response_dimensions": "Reaktionsdimensionen",
+    "dimension_scores": "Dimensionswerte",
+    "key_traits": "Reaktionsmuster",
+    "coping_tip": "Heilungseinsicht",
+    "percentile": "Nur {pct} der Menschen teilen die {type}-Reaktion",
+    "moreTests": "Mehr entdecken",
+    "share": "Teilen Sie Ihr Ergebnis"
+  },
+  "metric": {
+    "hypervigilance": "Hypervigilanz",
+    "emotional_regulation": "Emotionsregulation",
+    "dissociation": "Dissoziation",
+    "boundaries": "Grenzen",
+    "resilience": "Resilienz"
+  },
+  "type": {
+    "fight": {
+      "name": "Kampfreaktion",
+      "tagline": "Ein Krieger, der nie vor Bedrohung zurückweicht",
+      "description": "Ihr Nervensystem schaltet in den Kampfmodus, sobald es eine Bedrohung erkennt. Diese kraftvolle Überlebensstrategie entwickelte sich in der Kindheit, um sich zu schützen. Sie haben einen starken Willen und Führungsqualitäten, aber manchmal wird Wut zu einer Maske für Kontrolle und Verteidigung. Wahre Stärke kommt davon, Verletzlichkeit zuzulassen.",
+      "trait1": "Sofortige Wutreaktion",
+      "trait2": "Kontrollbedürfnis",
+      "trait3": "Übermäßige Wachsamkeit",
+      "tip": "Erforschen Sie die Emotionen, die sich hinter Ihrer Wut verbergen. Wut ist oft ein Schutzschild für Angst, Traurigkeit oder Verletzung. Fragen Sie sich: 'Bin ich gerade wirklich wütend, oder habe ich Angst?'"
+    },
+    "flight": {
+      "name": "Fluchtreaktion",
+      "tagline": "Ein Überlebender, der instinktiv vor Gefahr flieht",
+      "description": "Ihr Nervensystem schaltet in den Fluchtmodus, sobald es eine Bedrohung erkennt. Dies war eine entscheidende Strategie, die Sie in der Vergangenheit sicher gehalten hat. Hinter Ihrer hohen Produktivität und ständigen Aktivität kann ein unbewusstes Muster liegen, unangenehme Emotionen zu vermeiden. Anhalten erfordert auch Mut.",
+      "trait1": "Hyperaktivität / Arbeitssucht",
+      "trait2": "Vermeidendes Bewältigungsverhalten",
+      "trait3": "Angst und Unruhe",
+      "tip": "Bemerken Sie die Vermeidung, die sich hinter Ihrer Geschäftigkeit verbirgt. Versuchen Sie, jeden Tag nur 5 Minuten absolut nichts zu tun. Unbehagen ist kein Gefahrensignal — es ist der Ausgangspunkt der Heilung."
+    },
+    "freeze": {
+      "name": "Erstarrungsreaktion",
+      "tagline": "Ein schützender Shutdown bei Überwältigung",
+      "description": "Ihr Nervensystem schaltet in den Abschaltmodus, wenn die Bedrohung zu überwältigend erscheint. Dies ist eine natürliche Reaktion, um sich vor dem zu schützen, was unerträglich erscheint. Hinter der Taubheit und Dissoziation warten unverarbeitete Emotionen sicher. Sie können damit beginnen, wieder kleine Dinge zu fühlen.",
+      "trait1": "Emotionale Taubheit",
+      "trait2": "Dissoziation / Gedankenverloren",
+      "trait3": "Prokrastinationsmuster",
+      "tip": "Verbinden Sie sich wieder mit kleinen Empfindungen. Tauchen Sie Ihre Hände in warmes Wasser oder halten Sie einen Eiswürfel. Die Empfindungen Ihres Körpers zurückzugewinnen ist der erste Schritt aus der Erstarrung."
+    },
+    "fawn": {
+      "name": "Anpassungsreaktion",
+      "tagline": "Ein Harmonisierer, der das Selbst aufgibt, um Konflikte zu vermeiden",
+      "description": "Ihr Nervensystem schaltet in den Besänftigungs- und Gefallenmodus, wenn es eine Bedrohung erkennt. Diese clevere Überlebensstrategie entwickelte sich in Umgebungen, in denen Konflikte gefährlich waren. Hinter Ihrer ausgezeichneten Empathie und Beziehungsfähigkeit kann sich die Angst verbergen, Ihr 'wahres Selbst' zu verlieren. Auch Ihre Bedürfnisse zählen.",
+      "trait1": "Übermäßiges Entschuldigen und Nachgeben",
+      "trait2": "Schwierigkeiten beim Setzen von Grenzen",
+      "trait3": "Verlust der Selbstidentität",
+      "tip": "Üben Sie jeden Tag ein kleines 'Nein'. Nein zu sagen bedeutet nicht, die andere Person abzulehnen — es bedeutet, sich selbst zu wählen. Beginnen Sie damit zu fragen: 'Was will ich eigentlich?'"
+    }
+  },
+  "share": {
+    "text": "Mein Trauma-Reaktionstyp ist '{type}'! Was ist Ihr Überlebensmuster?"
+  },
+  "game": {
+    "back": "DopaBrain Home"
+  }
+}

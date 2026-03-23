@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "page_title": "Test de Réponse au Trauma - Combat, Fuite, Gel ou Soumission ? | DopaBrain",
+    "description": "Votre réponse au trauma est-elle Combat, Fuite, Gel ou Soumission ? 8 questions révèlent le schéma de survie de votre système nerveux et comment il façonne vos relations.",
+    "keywords": "test de réponse au trauma, combat fuite gel soumission, quiz réponse au trauma, test système nerveux, réponse trauma 4F, quiz TSPT, test type de trauma, réponse de survie, théorie polyvagale, guérison du trauma",
+    "og_title": "Test de Réponse au Trauma - Combat, Fuite, Gel ou Soumission ?",
+    "og_description": "8 questions révèlent votre schéma de survie ! Découvrez la réponse par défaut de votre système nerveux.",
+    "twitter_title": "Test de Réponse au Trauma - Combat, Fuite, Gel ou Soumission ?",
+    "twitter_description": "8 questions révèlent votre schéma de survie !"
+  },
+  "app": {
+    "skipLink": "Aller au contenu principal",
+    "loading": "Chargement..."
+  },
+  "intro": {
+    "title": "Test de Réponse au Trauma",
+    "subtitle": "Combat, Fuite, Gel ou Soumission ?",
+    "social_proof": "personnes ont découvert",
+    "feature_types": "4 types de réponses",
+    "feature_questions": "8 scénarios",
+    "feature_metrics": "5 dimensions",
+    "time_estimate": "Environ 2 minutes"
+  },
+  "carousel": {
+    "fight": "Combat",
+    "flight": "Fuite",
+    "freeze": "Gel",
+    "fawn": "Soumission"
+  },
+  "button": {
+    "start": "Découvrez Votre Réponse",
+    "retry": "Réessayer",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copier le lien"
+  },
+  "question": {
+    "0": "Quelqu'un vous crie dessus soudainement avec colère. Quelle est votre première réaction ?",
+    "0a": "Je riposte immédiatement et les confronte sur le pourquoi",
+    "0b": "Je quitte rapidement la situation ou change de sujet",
+    "0c": "Mon esprit se vide et je ne peux rien dire",
+    "0d": "Je m'excuse d'abord et j'essaie de les calmer",
+
+    "1": "Quand vous êtes traité injustement au travail, quel est votre schéma ?",
+    "1a": "J'exprime ma colère et soulève immédiatement le problème",
+    "1b": "Je commence à parcourir les sites d'emploi ou je me plonge dans d'autres tâches",
+    "1c": "Je deviens insensible et je pense 'c'est comme ça'",
+    "1d": "J'essaie de comprendre la position de mon patron et je travaille encore plus dur",
+
+    "2": "Quand vous découvrez qu'un ami proche a partagé votre secret avec d'autres ?",
+    "2a": "Je les confronte directement et fermement",
+    "2b": "Je coupe le contact et crée de la distance",
+    "2c": "Je me sens trahi et je me fige, incapable de faire quoi que ce soit",
+    "2d": "Je rationalise qu'ils devaient avoir une bonne raison",
+
+    "3": "Juste avant une échéance importante, un problème inattendu survient ?",
+    "3a": "Je mets toute mon énergie à trouver et corriger la cause",
+    "3b": "Je gère d'abord d'autres tâches urgentes, évitant le vrai problème",
+    "3c": "Je panique et rien ne semble gérable",
+    "3d": "Je demande de l'aide à tout le monde autour et suis leurs suggestions",
+
+    "4": "Votre partenaire dit soudainement 'il faut qu'on parle.' Votre réaction ?",
+    "4a": "Je deviens défensif — 'Qu'est-ce que j'ai fait de mal ?'",
+    "4b": "L'anxiété monte et je commence à imaginer les pires scénarios",
+    "4c": "Mes émotions s'éteignent et je reste assis avec un regard vide",
+    "4d": "Je dis immédiatement 'Je vais changer, qu'est-ce que tu veux ?'",
+
+    "5": "Tard dans la nuit, un mauvais souvenir refait soudainement surface. Que faites-vous ?",
+    "5a": "La colère monte et je frappe un oreiller ou fais de l'exercice",
+    "5b": "J'allume Netflix ou je fais défiler les réseaux sociaux pour m'échapper",
+    "5c": "Mon corps se fige et je fixe simplement le plafond",
+    "5d": "J'envoie un message à quelqu'un et commence une conversation décontractée en prétendant que tout va bien",
+
+    "6": "Vous faites une erreur devant une foule. Votre réponse ?",
+    "6a": "Je la minimise avec confiance ou rejette la faute sur les autres",
+    "6b": "Mon visage devient rouge et je veux partir immédiatement",
+    "6c": "Le temps semble s'arrêter et je ne peux pas réagir du tout",
+    "6d": "Je m'excuse abondamment et vérifie les sentiments de tout le monde",
+
+    "7": "En réfléchissant sur vous-même avant de dormir, quelle pensée vient en premier ?",
+    "7a": "Le monde ne me laissera pas tranquille — je suis toujours prêt à me battre",
+    "7b": "Je veux m'échapper vers un endroit loin d'ici",
+    "7c": "Il y a un vide où je ne ressens rien du tout",
+    "7d": "Je m'inquiète de savoir si j'ai déçu tout le monde autour de moi"
+  },
+  "analyzing": {
+    "title": "Analyse de vos réponses...",
+    "scanning": "Analyse des schémas du système nerveux...",
+    "mapping": "Cartographie des réponses de survie...",
+    "integrating": "Construction du profil 4F...",
+    "complete": "Analyse terminée !"
+  },
+  "result": {
+    "your_type": "Votre Réponse au Trauma",
+    "response_dimensions": "Dimensions de Réponse",
+    "dimension_scores": "Scores des Dimensions",
+    "key_traits": "Schémas de Réponse",
+    "coping_tip": "Perspective de Guérison",
+    "percentile": "Seulement {pct} des personnes partagent la réponse {type}",
+    "moreTests": "Explorer Plus",
+    "share": "Partagez Votre Résultat"
+  },
+  "metric": {
+    "hypervigilance": "Hypervigilance",
+    "emotional_regulation": "Régulation Émotionnelle",
+    "dissociation": "Dissociation",
+    "boundaries": "Limites",
+    "resilience": "Résilience"
+  },
+  "type": {
+    "fight": {
+      "name": "Réponse de Combat",
+      "tagline": "Un guerrier qui ne recule jamais devant la menace",
+      "description": "Votre système nerveux passe en mode combat dès qu'il détecte une menace. Cette puissante stratégie de survie s'est développée dans l'enfance pour vous protéger. Vous avez une forte volonté et du leadership, mais parfois la colère devient un masque pour le contrôle et la défense. La vraie force vient du fait d'accepter la vulnérabilité.",
+      "trait1": "Réponse de colère immédiate",
+      "trait2": "Besoin de contrôle",
+      "trait3": "Vigilance excessive",
+      "tip": "Explorez les émotions qui se cachent derrière votre colère. La colère est souvent un bouclier pour la peur, la tristesse ou la blessure. Demandez-vous : 'Suis-je vraiment en colère maintenant, ou ai-je peur ?'"
+    },
+    "flight": {
+      "name": "Réponse de Fuite",
+      "tagline": "Un survivant qui fuit instinctivement le danger",
+      "description": "Votre système nerveux passe en mode fuite dès qu'il détecte une menace. C'était une stratégie cruciale qui vous a gardé en sécurité dans le passé. Derrière votre haute productivité et votre activité constante, il peut y avoir un schéma inconscient d'évitement des émotions inconfortables. S'arrêter est aussi du courage.",
+      "trait1": "Hyperactivité / Bourreau de travail",
+      "trait2": "Adaptation d'évitement",
+      "trait3": "Anxiété et agitation",
+      "tip": "Remarquez l'évitement caché derrière votre activité. Essayez de passer seulement 5 minutes par jour à ne rien faire du tout. L'inconfort n'est pas un signal de danger — c'est le point de départ de la guérison."
+    },
+    "freeze": {
+      "name": "Réponse de Gel",
+      "tagline": "Un arrêt protecteur en cas de débordement",
+      "description": "Votre système nerveux passe en mode arrêt lorsque la menace semble trop écrasante. C'est une réponse naturelle pour vous protéger de ce qui semble insupportable. Derrière l'engourdissement et la dissociation, les émotions non traitées attendent en sécurité. Vous pouvez commencer par ressentir à nouveau de petites choses.",
+      "trait1": "Engourdissement émotionnel",
+      "trait2": "Dissociation / Absence",
+      "trait3": "Schémas de procrastination",
+      "tip": "Reconnectez-vous avec de petites sensations. Plongez vos mains dans l'eau chaude ou tenez un glaçon. Récupérer les sensations de votre corps est la première étape pour sortir du gel."
+    },
+    "fawn": {
+      "name": "Réponse de Soumission",
+      "tagline": "Un harmoniseur qui abandonne soi-même pour éviter le conflit",
+      "description": "Votre système nerveux passe en mode apaiser-et-plaire lorsqu'il détecte une menace. Cette stratégie de survie intelligente s'est développée dans des environnements où le conflit était dangereux. Derrière votre excellente empathie et vos compétences relationnelles peut se cacher une peur de perdre votre 'vrai moi'. Vos besoins comptent aussi.",
+      "trait1": "Excuses et concessions excessives",
+      "trait2": "Difficulté à poser des limites",
+      "trait3": "Perte d'identité personnelle",
+      "tip": "Pratiquez un petit 'non' chaque jour. Dire non ne rejette pas l'autre personne — c'est se choisir soi-même. Commencez par demander : 'Qu'est-ce que je veux vraiment ?'"
+    }
+  },
+  "share": {
+    "text": "Mon type de réponse au trauma est '{type}' ! Quel est votre schéma de survie ?"
+  },
+  "game": {
+    "back": "DopaBrain Home"
+  }
+}

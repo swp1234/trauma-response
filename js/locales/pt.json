@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "page_title": "Teste de Resposta ao Trauma - Luta, Fuga, Congelamento ou Submissão? | DopaBrain",
+    "description": "Sua resposta ao trauma é Luta, Fuga, Congelamento ou Submissão? 8 perguntas revelam o padrão de sobrevivência do seu sistema nervoso e como ele molda seus relacionamentos.",
+    "keywords": "teste resposta trauma, luta fuga congelamento submissão, quiz resposta trauma, teste sistema nervoso, resposta 4F trauma, quiz TEPT, teste tipo trauma, resposta sobrevivência, teoria polivagal, cura trauma",
+    "og_title": "Teste de Resposta ao Trauma - Luta, Fuga, Congelamento ou Submissão?",
+    "og_description": "8 perguntas revelam seu padrão de sobrevivência! Descubra a resposta padrão do seu sistema nervoso.",
+    "twitter_title": "Teste de Resposta ao Trauma - Luta, Fuga, Congelamento ou Submissão?",
+    "twitter_description": "8 perguntas revelam seu padrão de sobrevivência!"
+  },
+  "app": {
+    "skipLink": "Pular para o conteúdo",
+    "loading": "Carregando..."
+  },
+  "intro": {
+    "title": "Teste de Resposta ao Trauma",
+    "subtitle": "Luta, Fuga, Congelamento ou Submissão?",
+    "social_proof": "pessoas descobriram",
+    "feature_types": "4 tipos de resposta",
+    "feature_questions": "8 cenários",
+    "feature_metrics": "5 dimensões",
+    "time_estimate": "Leva cerca de 2 minutos"
+  },
+  "carousel": {
+    "fight": "Luta",
+    "flight": "Fuga",
+    "freeze": "Congelamento",
+    "fawn": "Submissão"
+  },
+  "button": {
+    "start": "Descubra sua Resposta",
+    "retry": "Tentar Novamente",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copiar Link"
+  },
+  "question": {
+    "0": "Alguém grita com você com raiva de repente. Qual é sua primeira reação?",
+    "0a": "Eu respondo imediatamente e os confronto sobre o porquê",
+    "0b": "Eu saio rapidamente da situação ou mudo de assunto",
+    "0c": "Minha mente fica em branco e não consigo dizer nada",
+    "0d": "Eu peço desculpas primeiro e tento acalmá-los",
+
+    "1": "Quando você é tratado injustamente no trabalho, qual é seu padrão?",
+    "1a": "Eu expresso minha raiva e levanto o problema imediatamente",
+    "1b": "Eu começo a navegar em sites de emprego ou me jogo em outro trabalho",
+    "1c": "Eu fico entorpecido e penso 'é assim que é'",
+    "1d": "Eu tento entender a posição do meu chefe e trabalho ainda mais duro",
+
+    "2": "Quando você descobre que um amigo próximo compartilhou seu segredo com outros?",
+    "2a": "Eu os confronto diretamente e com firmeza",
+    "2b": "Eu corto o contato e crio distância",
+    "2c": "Eu me sinto traído e congelo, sem conseguir fazer nada",
+    "2d": "Eu racionalizo que eles devem ter tido um bom motivo",
+
+    "3": "Logo antes de um prazo importante, surge um problema inesperado?",
+    "3a": "Eu coloco toda minha energia em encontrar e corrigir a causa",
+    "3b": "Eu lido com outras tarefas urgentes primeiro, evitando o problema real",
+    "3c": "Eu entro em pânico e nada parece gerenciável",
+    "3d": "Eu peço ajuda a todos ao meu redor e sigo suas sugestões",
+
+    "4": "Seu parceiro diz de repente 'precisamos conversar'. Sua reação?",
+    "4a": "Eu fico na defensiva — 'O que eu fiz de errado?'",
+    "4b": "A ansiedade bate e eu começo a imaginar os piores cenários na minha cabeça",
+    "4c": "Minhas emoções desligam e eu apenas fico sentado olhando para o nada",
+    "4d": "Eu digo imediatamente 'vou mudar, o que você quer?'",
+
+    "5": "Tarde da noite, uma memória ruim surge de repente. O que você faz?",
+    "5a": "A raiva sobe e eu bato em um travesseiro ou me exercito",
+    "5b": "Eu ligo a Netflix ou rolo as redes sociais para escapar",
+    "5c": "Meu corpo congela e eu apenas olho para o teto",
+    "5d": "Eu mando mensagem para alguém e começo uma conversa casual fingindo que estou bem",
+
+    "6": "Você comete um erro na frente de uma multidão. Sua resposta?",
+    "6a": "Eu ignoro com confiança ou desvio a culpa",
+    "6b": "Meu rosto fica vermelho e eu quero sair imediatamente",
+    "6c": "O tempo parece parar e eu não consigo reagir de jeito nenhum",
+    "6d": "Eu peço desculpas profusamente e verifico os sentimentos de todos",
+
+    "7": "Refletindo sobre você mesmo antes de dormir, que pensamento vem primeiro?",
+    "7a": "O mundo não me deixará em paz — estou sempre pronto para lutar",
+    "7b": "Eu quero escapar para algum lugar longe daqui",
+    "7c": "Há um vazio onde não sinto nada",
+    "7d": "Eu me preocupo se decepcionei todos ao meu redor"
+  },
+  "analyzing": {
+    "title": "Analisando suas respostas...",
+    "scanning": "Escaneando padrões do sistema nervoso...",
+    "mapping": "Mapeando respostas de sobrevivência...",
+    "integrating": "Construindo perfil 4F...",
+    "complete": "Análise completa!"
+  },
+  "result": {
+    "your_type": "Sua Resposta ao Trauma",
+    "response_dimensions": "Dimensões de Resposta",
+    "dimension_scores": "Pontuações de Dimensão",
+    "key_traits": "Padrões de Resposta",
+    "coping_tip": "Insight de Cura",
+    "percentile": "Apenas {pct} das pessoas compartilham a resposta {type}",
+    "moreTests": "Explorar Mais",
+    "share": "Compartilhar seu Resultado"
+  },
+  "metric": {
+    "hypervigilance": "Hipervigilância",
+    "emotional_regulation": "Regulação Emocional",
+    "dissociation": "Dissociação",
+    "boundaries": "Limites",
+    "resilience": "Resiliência"
+  },
+  "type": {
+    "fight": {
+      "name": "Resposta de Luta",
+      "tagline": "Um guerreiro que nunca recua diante da ameaça",
+      "description": "Seu sistema nervoso muda para o modo de combate no momento em que detecta uma ameaça. Esta poderosa estratégia de sobrevivência se desenvolveu na infância para protegê-lo. Você tem forte força de vontade e liderança, mas às vezes a raiva se torna uma máscara de controle e defesa. A verdadeira força vem de permitir a vulnerabilidade.",
+      "trait1": "Resposta de raiva imediata",
+      "trait2": "Necessidade de controle",
+      "trait3": "Vigilância excessiva",
+      "tip": "Explore as emoções escondidas atrás de sua raiva. A raiva é frequentemente um escudo para o medo, tristeza ou dor. Pergunte a si mesmo: 'Estou realmente com raiva agora, ou estou com medo?'"
+    },
+    "flight": {
+      "name": "Resposta de Fuga",
+      "tagline": "Um sobrevivente que foge instintivamente do perigo",
+      "description": "Seu sistema nervoso muda para o modo de fuga no momento em que detecta uma ameaça. Esta foi uma estratégia crucial que o manteve seguro no passado. Por trás de sua alta produtividade e atividade constante, pode haver um padrão inconsciente de evitar emoções desconfortáveis. Parar também é coragem.",
+      "trait1": "Hiperatividade / Vício em trabalho",
+      "trait2": "Enfrentamento evitativo",
+      "trait3": "Ansiedade e inquietação",
+      "tip": "Perceba a evitação escondida por trás de sua agitação. Tente passar apenas 5 minutos por dia sem fazer absolutamente nada. O desconforto não é um sinal de perigo — é o ponto de partida da cura."
+    },
+    "freeze": {
+      "name": "Resposta de Congelamento",
+      "tagline": "Um desligamento protetor quando sobrecarregado",
+      "description": "Seu sistema nervoso muda para o modo de desligamento quando a ameaça parece muito avassaladora. Esta é uma resposta natural para protegê-lo do que parece insuportável. Por trás do entorpecimento e da dissociação, emoções não processadas estão esperando com segurança. Você pode começar sentindo pequenas coisas novamente.",
+      "trait1": "Entorpecimento emocional",
+      "trait2": "Dissociação / Desconexão",
+      "trait3": "Padrões de procrastinação",
+      "tip": "Reconecte-se com pequenas sensações. Mergulhe suas mãos em água morna ou segure um cubo de gelo. Recuperar as sensações do seu corpo é o primeiro passo para sair do congelamento."
+    },
+    "fawn": {
+      "name": "Resposta de Submissão",
+      "tagline": "Um harmonizador que rende o eu para evitar conflitos",
+      "description": "Seu sistema nervoso muda para o modo de apaziguar e agradar quando detecta uma ameaça. Esta estratégia de sobrevivência inteligente se desenvolveu em ambientes onde o conflito era perigoso. Por trás de sua excelente empatia e habilidades de relacionamento pode se esconder um medo de perder seu 'eu real'. Suas necessidades também importam.",
+      "trait1": "Pedido de desculpas e concessão excessivos",
+      "trait2": "Dificuldade em estabelecer limites",
+      "trait3": "Perda de identidade própria",
+      "tip": "Pratique um pequeno 'não' todos os dias. Dizer não não é rejeitar a outra pessoa — é escolher a si mesmo. Comece perguntando: 'O que eu realmente quero?'"
+    }
+  },
+  "share": {
+    "text": "Meu tipo de resposta ao trauma é '{type}'! Qual é seu padrão de sobrevivência?"
+  },
+  "game": {
+    "back": "DopaBrain Home"
+  }
+}
