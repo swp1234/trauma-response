@@ -159,6 +159,7 @@ class TraumaResponseApp {
             document.addEventListener('click', () => langMenu.classList.add('hidden'));
         }
 
+        document.getElementById('share-download')?.addEventListener('click', () => this.downloadResultCard());
         document.getElementById('share-kakao')?.addEventListener('click', () => this.shareKakao());
         document.getElementById('share-twitter')?.addEventListener('click', () => this.shareTwitter());
         document.getElementById('share-facebook')?.addEventListener('click', () => this.shareFacebook());
@@ -543,6 +544,29 @@ class TraumaResponseApp {
             document.execCommand('copy');
             document.body.removeChild(ta);
         }
+    }
+
+    downloadResultCard() {
+        if (!this.resultType || typeof ResultCard === 'undefined') return;
+
+        const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
+        const dims = this.getNormalizedDimensions();
+        const dimLabels = DIMENSION_KEYS.map(k => t('metric.' + k));
+
+        const dimensions = dimLabels.map((label, i) => ({
+            label: label,
+            pct: dims[i],
+            color: this.resultType.color
+        }));
+
+        ResultCard.download({
+            appName: 'Trauma Response Test',
+            typeName: t(this.resultType.nameKey),
+            typeEmoji: this.resultType.emoji,
+            dimensions: dimensions,
+            primaryColor: '#e11d48',
+            tagline: 'dopabrain.com/trauma-response'
+        });
     }
 }
 
