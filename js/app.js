@@ -129,6 +129,9 @@ class TraumaResponseApp {
 
         if (typeof gtag === 'function') {
             gtag('event', 'page_view', { page_title: 'Trauma Response Test' });
+            setTimeout(() => {
+                gtag('event', 'page_engage', { event_category: 'trauma_response', engagement_time_msec: 5000 });
+            }, 5000);
         }
     }
 
