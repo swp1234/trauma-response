@@ -110,7 +110,43 @@ class TraumaResponseApp {
         this.typeScores = [0, 0, 0, 0];
         this.dimScores = [0, 0, 0, 0, 0];
         this.resultType = null;
+        this.resultAdLoaded = false;
         this.init();
+    }
+
+    trackEvent(name, params = {}) {
+        const payload = Object.assign({
+            app_name: 'trauma_response',
+            result_type: this.resultType ? this.resultType.id : ''
+        }, params);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: name }, payload));
+        if (typeof gtag === 'function') {
+            gtag('event', name, payload);
+        }
+    }
+
+    loadResultAd(retryCount = 0) {
+        if (this.resultAdLoaded) return;
+        const slot = document.querySelector('[data-ad-surface="trauma_response_result_ad"] ins.adsbygoogle');
+        if (!slot) return;
+
+        const width = slot.offsetWidth || (slot.parentElement ? slot.parentElement.offsetWidth : 0);
+        if (width < 32) {
+            if (retryCount < 5) {
+                setTimeout(() => this.loadResultAd(retryCount + 1), 150);
+            }
+            return;
+        }
+
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            this.resultAdLoaded = true;
+            slot.dataset.adLoaded = 'true';
+            this.trackEvent('trauma_response_result_ad_impression', { ad_surface: 'trauma_response_result_ad' });
+        } catch (e) {
+            slot.dataset.adLoaded = 'error';
+        }
     }
 
     async init() {
@@ -418,6 +454,9 @@ class TraumaResponseApp {
         const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
 
         this.showScreen('result-screen');
+        this.trackEvent('trauma_response_result_view');
+        this.trackEvent('result_view', { event_category: 'trauma_response', event_label: type.id, value: 1 });
+        this.loadResultAd();
 
         const emoji = document.getElementById('result-emoji');
         if (emoji) emoji.textContent = type.emoji;
@@ -472,13 +511,7 @@ class TraumaResponseApp {
 
         this.spawnConfetti();
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'quiz_complete', {
-                event_category: 'trauma_response',
-                event_label: type.id,
-                value: 1
-            });
-        }
+        this.trackEvent('quiz_complete', { event_category: 'trauma_response', event_label: type.id, value: 1 });
     }
 
     spawnConfetti() {
@@ -514,23 +547,27 @@ class TraumaResponseApp {
 
     shareKakao() {
         const text = this.getShareText();
+        this.trackEvent('trauma_response_share_click', { share_channel: 'kakao' });
         const url = 'https://sharer.kakao.com/talk/friends/picker/link?url=' + encodeURIComponent(this.getShareUrl()) + '&text=' + encodeURIComponent(text);
         window.open(url, '_blank', 'width=600,height=400');
     }
 
     shareTwitter() {
         const text = this.getShareText();
+        this.trackEvent('trauma_response_share_click', { share_channel: 'twitter' });
         const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(this.getShareUrl());
         window.open(url, '_blank', 'width=600,height=400');
     }
 
     shareFacebook() {
+        this.trackEvent('trauma_response_share_click', { share_channel: 'facebook' });
         const url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(this.getShareUrl());
         window.open(url, '_blank', 'width=600,height=400');
     }
 
     async shareCopy() {
         const text = this.getShareText() + ' ' + this.getShareUrl();
+        this.trackEvent('trauma_response_copy_link');
         try {
             await navigator.clipboard.writeText(text);
             const btn = document.getElementById('share-copy');
@@ -551,6 +588,7 @@ class TraumaResponseApp {
 
     downloadResultCard() {
         if (!this.resultType || typeof ResultCard === 'undefined') return;
+        this.trackEvent('trauma_response_save_click');
 
         const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
         const dims = this.getNormalizedDimensions();
