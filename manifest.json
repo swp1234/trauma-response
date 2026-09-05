@@ -1,8 +1,9 @@
 {
   "name": "Trauma Response Test",
   "short_name": "Trauma Response",
-  "description": "Discover your trauma response type - Fight, Flight, Freeze, or Fawn",
+  "description": "Reflect on response choices across eight everyday scenarios. Not a diagnosis.",
   "start_url": "/trauma-response/",
+  "scope": "/trauma-response/",
   "display": "standalone",
   "background_color": "#0a0f1e",
   "theme_color": "#e11d48",

@@ -1,12 +1,11 @@
 {
   "meta": {
     "page_title": "Tes Respons Trauma - Fight, Flight, Freeze, atau Fawn? | DopaBrain",
-    "description": "Apakah respons trauma Anda Fight, Flight, Freeze, atau Fawn? 8 pertanyaan mengungkap pola pertahanan sistem saraf Anda dan bagaimana itu membentuk hubungan Anda.",
-    "keywords": "tes respons trauma, fight flight freeze fawn, kuis respons trauma, tes sistem saraf, respons trauma 4F, kuis PTSD, tes tipe trauma, respons bertahan hidup, teori polivagal, penyembuhan trauma",
+    "description": "Bandingkan respons Anda dalam delapan situasi stres sehari-hari: menghadapi, pergi, berhenti sejenak, atau menyesuaikan diri. Refleksi pribadi, bukan diagnosis.",
     "og_title": "Tes Respons Trauma - Fight, Flight, Freeze, atau Fawn?",
-    "og_description": "8 pertanyaan mengungkap pola bertahan hidup Anda! Temukan respons default sistem saraf Anda.",
+    "og_description": "Refleksi delapan situasi tentang pilihan menghadapi, pergi, berhenti, dan menyesuaikan diri.",
     "twitter_title": "Tes Respons Trauma - Fight, Flight, Freeze, atau Fawn?",
-    "twitter_description": "8 pertanyaan mengungkap pola bertahan hidup Anda!"
+    "twitter_description": "Refleksi delapan situasi tentang pilihan menghadapi, pergi, berhenti, dan menyesuaikan diri."
   },
   "app": {
     "skipLink": "Langsung ke konten utama",
@@ -15,11 +14,10 @@
   "intro": {
     "title": "Tes Respons Trauma",
     "subtitle": "Fight, Flight, Freeze, atau Fawn?",
-    "social_proof": "orang telah menemukan",
     "feature_types": "4 tipe respons",
     "feature_questions": "8 skenario",
-    "feature_metrics": "5 dimensi",
-    "time_estimate": "Sekitar 2 menit"
+    "time_estimate": "Sekitar 2 menit",
+    "boundary": "Aktivitas buatan penulis ini untuk refleksi pribadi. Ini tidak mendiagnosis trauma, PTSD, atau kondisi kesehatan apa pun."
   },
   "carousel": {
     "fight": "Fight",
@@ -30,124 +28,87 @@
   "button": {
     "start": "Temukan Respons Anda",
     "retry": "Coba Lagi",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Salin Tautan"
+    "next_action": "Ubah refleksi ini menjadi rencana 3 langkah",
+    "share": "Bagikan aktivitas ini"
   },
   "question": {
     "0": "Seseorang tiba-tiba berteriak marah pada Anda. Apa reaksi pertama Anda?",
+    "1": "Ketika Anda diperlakukan tidak adil di tempat kerja, apa pola Anda?",
+    "2": "Ketika Anda tahu teman dekat membocorkan rahasia Anda ke orang lain?",
+    "3": "Tepat sebelum deadline penting, muncul masalah tak terduga?",
+    "4": "Pasangan Anda tiba-tiba bilang 'kita perlu bicara.' Reaksi Anda?",
+    "5": "Larut malam, kenangan buruk tiba-tiba muncul. Apa yang Anda lakukan?",
+    "6": "Anda membuat kesalahan di depan orang banyak. Respons Anda?",
+    "7": "Merenung tentang diri sendiri sebelum tidur, pikiran apa yang muncul duluan?",
     "0a": "Saya langsung membalas dan mengonfrontasi mereka tentang alasannya",
     "0b": "Saya segera pergi dari situasi itu atau mengubah topik pembicaraan",
     "0c": "Pikiran saya kosong dan saya tidak bisa berkata apa-apa",
     "0d": "Saya minta maaf duluan dan mencoba menenangkan mereka",
-
-    "1": "Ketika Anda diperlakukan tidak adil di tempat kerja, apa pola Anda?",
     "1a": "Saya ungkapkan kemarahan saya dan langsung mengangkat masalahnya",
     "1b": "Saya mulai browsing situs lowongan kerja atau menenggelamkan diri dalam pekerjaan lain",
     "1c": "Saya mati rasa dan berpikir 'memang begitulah adanya'",
     "1d": "Saya mencoba memahami posisi atasan dan bekerja lebih keras lagi",
-
-    "2": "Ketika Anda tahu teman dekat membocorkan rahasia Anda ke orang lain?",
     "2a": "Saya konfrontasi mereka secara langsung dan tegas",
     "2b": "Saya putuskan kontak dan menciptakan jarak",
     "2c": "Saya merasa dikhianati dan membeku, tidak bisa berbuat apa-apa",
     "2d": "Saya beralasan bahwa mereka pasti punya alasan bagus",
-
-    "3": "Tepat sebelum deadline penting, muncul masalah tak terduga?",
     "3a": "Saya curahkan semua energi untuk menemukan dan memperbaiki penyebabnya",
     "3b": "Saya tangani tugas mendesak lainnya dulu, menghindari masalah yang sebenarnya",
     "3c": "Saya panik dan semuanya terasa tidak terkendali",
     "3d": "Saya minta bantuan semua orang di sekitar dan ikuti saran mereka",
-
-    "4": "Pasangan Anda tiba-tiba bilang 'kita perlu bicara.' Reaksi Anda?",
     "4a": "Saya jadi defensif — 'Apa salah saya?'",
     "4b": "Kecemasan menyerang dan saya mulai membayangkan skenario terburuk",
     "4c": "Emosi saya mati dan saya hanya duduk dengan tatapan kosong",
     "4d": "Saya langsung bilang 'Aku akan berubah, kamu mau apa?'",
-
-    "5": "Larut malam, kenangan buruk tiba-tiba muncul. Apa yang Anda lakukan?",
     "5a": "Kemarahan muncul dan saya pukul bantal atau olahraga",
     "5b": "Saya nyalakan Netflix atau scroll media sosial untuk mengalihkan pikiran",
     "5c": "Tubuh saya membeku dan saya hanya menatap langit-langit",
     "5d": "Saya kirim pesan ke seseorang dan mulai ngobrol santai seolah baik-baik saja",
-
-    "6": "Anda membuat kesalahan di depan orang banyak. Respons Anda?",
     "6a": "Saya anggap enteng dengan percaya diri atau alihkan kesalahan",
     "6b": "Wajah saya memerah dan saya ingin langsung pergi",
     "6c": "Waktu terasa berhenti dan saya tidak bisa bereaksi sama sekali",
     "6d": "Saya minta maaf berkali-kali dan cek perasaan semua orang",
-
-    "7": "Merenung tentang diri sendiri sebelum tidur, pikiran apa yang muncul duluan?",
     "7a": "Dunia tidak akan membiarkan saya sendiri — saya selalu siap untuk melawan",
     "7b": "Saya ingin kabur ke tempat yang jauh dari sini",
     "7c": "Ada kekosongan di mana saya tidak merasakan apa-apa",
     "7d": "Saya khawatir apakah saya mengecewakan semua orang di sekitar saya"
   },
   "analyzing": {
-    "title": "Menganalisis respons Anda...",
-    "scanning": "Memindai pola sistem saraf...",
-    "mapping": "Memetakan respons bertahan hidup...",
-    "integrating": "Membangun profil 4F...",
-    "complete": "Analisis selesai!"
+    "title": "Menyiapkan ringkasan Anda?",
+    "scanning": "Membandingkan delapan pilihan Anda?"
   },
   "result": {
-    "your_type": "Respons Trauma Anda",
-    "response_dimensions": "Dimensi Respons",
-    "dimension_scores": "Skor Dimensi",
-    "key_traits": "Pola Respons",
-    "coping_tip": "Wawasan Penyembuhan",
-    "percentile": "Hanya {pct} orang yang memiliki respons {type}",
+    "your_type": "Respons yang paling sering dipilih",
+    "boundary": "Ringkasan ini hanya menghitung pilihan Anda di sini. Ini bukan diagnosis atau penilaian tervalidasi dan bukan bukti respons Anda di setiap situasi.",
+    "calculation": "Cara kerja: setiap jawaban menambah satu poin pada label respons. Label terbanyak ditampilkan; jika seri, label pertama yang cocok digunakan.",
     "moreTests": "Jelajahi Lebih Lanjut",
     "share": "Bagikan Hasil Anda"
-  },
-  "metric": {
-    "hypervigilance": "Kewaspadaan Berlebih",
-    "emotional_regulation": "Regulasi Emosi",
-    "dissociation": "Disosiasi",
-    "boundaries": "Batasan Diri",
-    "resilience": "Ketahanan"
   },
   "type": {
     "fight": {
       "name": "Respons Fight",
-      "tagline": "Pejuang yang tidak pernah mundur dari ancaman",
-      "description": "Sistem saraf Anda beralih ke mode pertempuran saat mendeteksi ancaman. Strategi bertahan hidup yang kuat ini berkembang sejak masa kanak-kanak untuk melindungi diri Anda. Anda memiliki kemauan kuat dan jiwa kepemimpinan, tetapi kadang kemarahan menjadi topeng untuk kontrol dan pertahanan. Kekuatan sejati datang dari membiarkan diri rentan.",
-      "trait1": "Respons kemarahan langsung",
-      "trait2": "Kebutuhan untuk kontrol",
-      "trait3": "Kewaspadaan berlebihan",
-      "tip": "Jelajahi emosi yang bersembunyi di balik kemarahan Anda. Kemarahan sering menjadi perisai untuk ketakutan, kesedihan, atau luka. Tanyakan pada diri sendiri: 'Apakah saya benar-benar marah sekarang, atau saya takut?'"
+      "tagline": "Anda paling sering memilih menghadapi langsung"
     },
     "flight": {
       "name": "Respons Flight",
-      "tagline": "Penyintas yang secara naluriah lari dari bahaya",
-      "description": "Sistem saraf Anda beralih ke mode pelarian saat mendeteksi ancaman. Ini adalah strategi penting yang menjaga Anda tetap aman di masa lalu. Di balik produktivitas tinggi dan aktivitas konstan Anda, mungkin ada pola ketidaksadaran menghindari emosi yang tidak nyaman. Berhenti juga membutuhkan keberanian.",
-      "trait1": "Hiperaktivitas / Kecanduan kerja",
-      "trait2": "Koping menghindar",
-      "trait3": "Kecemasan dan kegelisahan",
-      "tip": "Perhatikan penghindaran yang tersembunyi di balik kesibukan Anda. Coba luangkan hanya 5 menit sehari untuk benar-benar tidak melakukan apa-apa. Ketidaknyamanan bukan sinyal bahaya — itu adalah titik awal penyembuhan."
+      "tagline": "Anda paling sering memilih meninggalkan situasi"
     },
     "freeze": {
       "name": "Respons Freeze",
-      "tagline": "Penutupan protektif saat kewalahan",
-      "description": "Sistem saraf Anda beralih ke mode shutdown ketika ancaman terasa terlalu besar. Ini adalah respons alami untuk melindungi diri dari apa yang terasa tidak tertahankan. Di balik mati rasa dan disosiasi, emosi yang belum diproses sedang menunggu dengan aman. Anda bisa mulai dengan merasakan hal-hal kecil lagi.",
-      "trait1": "Mati rasa emosional",
-      "trait2": "Disosiasi / Melamun",
-      "trait3": "Pola prokrastinasi",
-      "tip": "Hubungkan kembali dengan sensasi kecil. Celupkan tangan Anda ke dalam air hangat atau pegang es batu. Merebut kembali sensasi tubuh Anda adalah langkah pertama keluar dari freeze."
+      "tagline": "Anda paling sering memilih berhenti sejenak"
     },
     "fawn": {
       "name": "Respons Fawn",
-      "tagline": "Penyelaras yang menyerahkan diri untuk menghindari konflik",
-      "description": "Sistem saraf Anda beralih ke mode menenangkan dan menyenangkan saat mendeteksi ancaman. Strategi bertahan hidup yang cerdas ini berkembang di lingkungan di mana konflik berbahaya. Di balik empati dan keterampilan hubungan yang luar biasa mungkin tersembunyi ketakutan kehilangan 'diri sejati' Anda. Kebutuhan Anda juga penting.",
-      "trait1": "Permintaan maaf dan mengalah berlebihan",
-      "trait2": "Kesulitan menetapkan batasan",
-      "trait3": "Kehilangan identitas diri",
-      "tip": "Latih satu 'tidak' kecil setiap hari. Mengatakan tidak bukan menolak orang lain — itu memilih diri sendiri. Mulailah dengan bertanya: 'Apa yang sebenarnya saya inginkan?'"
+      "tagline": "Anda paling sering memilih menyesuaikan diri dengan orang lain"
     }
   },
   "share": {
-    "text": "Tipe respons trauma saya adalah '{type}'! Apa pola bertahan hidup Anda?"
+    "text": "Renungkan pilihan Anda dalam delapan situasi sehari-hari.",
+    "success": "Dibagikan"
+  },
+  "related": {
+    "attachment": "Refleksi keterikatan",
+    "brain": "Kuis gaya keputusan"
   },
   "game": {
     "back": "DopaBrain Home"

@@ -13,59 +13,12 @@ const QUESTIONS = [
     { id: 7, icon: '\u{1F30C}', questionKey: 'question.7', options: ['question.7a', 'question.7b', 'question.7c', 'question.7d'] }
 ];
 
-// Type indices: 0=Fight, 1=Flight, 2=Freeze, 3=Fawn
-// Dimension scores: [hypervigilance, emotional_regulation, dissociation, boundaries, resilience]
-const SCORE_MAP = {
-    '0a': { type: [3,0,0,0], dim: [3,0,0,2,0] },
-    '0b': { type: [0,3,0,0], dim: [2,0,0,0,1] },
-    '0c': { type: [0,0,3,0], dim: [0,0,3,0,0] },
-    '0d': { type: [0,0,0,3], dim: [0,1,0,0,2] },
-
-    '1a': { type: [3,0,0,0], dim: [2,0,0,3,0] },
-    '1b': { type: [0,3,0,0], dim: [2,1,0,0,0] },
-    '1c': { type: [0,0,3,0], dim: [0,0,3,0,1] },
-    '1d': { type: [0,0,0,3], dim: [0,0,0,0,3] },
-
-    '2a': { type: [3,0,0,0], dim: [3,0,0,2,0] },
-    '2b': { type: [0,3,0,0], dim: [2,0,1,0,0] },
-    '2c': { type: [0,0,3,0], dim: [0,0,3,1,0] },
-    '2d': { type: [0,0,0,3], dim: [1,1,0,0,2] },
-
-    '3a': { type: [3,0,0,0], dim: [2,0,0,3,0] },
-    '3b': { type: [0,3,0,0], dim: [3,0,0,0,0] },
-    '3c': { type: [0,0,3,0], dim: [0,0,3,0,0] },
-    '3d': { type: [0,0,0,3], dim: [0,2,0,0,2] },
-
-    '4a': { type: [3,0,0,0], dim: [3,0,0,2,0] },
-    '4b': { type: [0,3,0,0], dim: [2,0,1,0,0] },
-    '4c': { type: [0,0,3,0], dim: [0,0,3,0,0] },
-    '4d': { type: [0,0,0,3], dim: [0,1,0,0,3] },
-
-    '5a': { type: [3,0,0,0], dim: [3,0,0,2,0] },
-    '5b': { type: [0,3,0,0], dim: [2,0,1,0,1] },
-    '5c': { type: [0,0,3,0], dim: [0,0,3,0,0] },
-    '5d': { type: [0,0,0,3], dim: [0,2,0,0,2] },
-
-    '6a': { type: [3,0,0,0], dim: [2,0,0,3,0] },
-    '6b': { type: [0,3,0,0], dim: [3,0,0,0,0] },
-    '6c': { type: [0,0,3,0], dim: [0,0,3,0,1] },
-    '6d': { type: [0,0,0,3], dim: [0,1,0,0,3] },
-
-    '7a': { type: [3,0,0,0], dim: [3,0,0,2,0] },
-    '7b': { type: [0,3,0,0], dim: [2,0,1,0,0] },
-    '7c': { type: [0,0,3,0], dim: [0,0,3,0,0] },
-    '7d': { type: [0,0,0,3], dim: [0,2,0,0,2] }
-};
-
 const TRAUMA_TYPES = {
     fight: {
         id: 'fight',
         emoji: '\u{2694}\u{FE0F}',
         nameKey: 'type.fight.name',
         taglineKey: 'type.fight.tagline',
-        descKey: 'type.fight.description',
-        traitsKeys: ['type.fight.trait1', 'type.fight.trait2', 'type.fight.trait3'],
-        tipKey: 'type.fight.tip',
         color: '#ef4444'
     },
     flight: {
@@ -73,9 +26,6 @@ const TRAUMA_TYPES = {
         emoji: '\u{1F3C3}',
         nameKey: 'type.flight.name',
         taglineKey: 'type.flight.tagline',
-        descKey: 'type.flight.description',
-        traitsKeys: ['type.flight.trait1', 'type.flight.trait2', 'type.flight.trait3'],
-        tipKey: 'type.flight.tip',
         color: '#f59e0b'
     },
     freeze: {
@@ -83,9 +33,6 @@ const TRAUMA_TYPES = {
         emoji: '\u{1F9CA}',
         nameKey: 'type.freeze.name',
         taglineKey: 'type.freeze.tagline',
-        descKey: 'type.freeze.description',
-        traitsKeys: ['type.freeze.trait1', 'type.freeze.trait2', 'type.freeze.trait3'],
-        tipKey: 'type.freeze.tip',
         color: '#6366f1'
     },
     fawn: {
@@ -93,59 +40,26 @@ const TRAUMA_TYPES = {
         emoji: '\u{1F98C}',
         nameKey: 'type.fawn.name',
         taglineKey: 'type.fawn.tagline',
-        descKey: 'type.fawn.description',
-        traitsKeys: ['type.fawn.trait1', 'type.fawn.trait2', 'type.fawn.trait3'],
-        tipKey: 'type.fawn.tip',
         color: '#10b981'
     }
 };
 
 const TYPE_ORDER = ['fight', 'flight', 'freeze', 'fawn'];
-const DIMENSION_KEYS = ['hypervigilance', 'emotional_regulation', 'dissociation', 'boundaries', 'resilience'];
-
 class TraumaResponseApp {
     constructor() {
         this.currentQuestion = 0;
         this.answers = [];
         this.typeScores = [0, 0, 0, 0];
-        this.dimScores = [0, 0, 0, 0, 0];
         this.resultType = null;
-        this.resultAdLoaded = false;
+        this.trackedStages = new Set();
         this.init();
     }
 
-    trackEvent(name, params = {}) {
-        const payload = Object.assign({
-            app_name: 'trauma_response',
-            result_type: this.resultType ? this.resultType.id : ''
-        }, params);
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push(Object.assign({ event: name }, payload));
+    trackStage(name) {
+        if (this.trackedStages.has(name)) return;
+        this.trackedStages.add(name);
         if (typeof gtag === 'function') {
-            gtag('event', name, payload);
-        }
-    }
-
-    loadResultAd(retryCount = 0) {
-        if (this.resultAdLoaded) return;
-        const slot = document.querySelector('[data-ad-surface="trauma_response_result_ad"] ins.adsbygoogle');
-        if (!slot) return;
-
-        const width = slot.offsetWidth || (slot.parentElement ? slot.parentElement.offsetWidth : 0);
-        if (width < 32) {
-            if (retryCount < 5) {
-                setTimeout(() => this.loadResultAd(retryCount + 1), 150);
-            }
-            return;
-        }
-
-        try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-            this.resultAdLoaded = true;
-            slot.dataset.adLoaded = 'true';
-            this.trackEvent('trauma_response_result_ad_impression', { ad_surface: 'trauma_response_result_ad' });
-        } catch (e) {
-            slot.dataset.adLoaded = 'error';
+            gtag('event', name, { event_category: 'trauma_response' });
         }
     }
 
@@ -158,17 +72,8 @@ class TraumaResponseApp {
         this.initTheme();
         this.hideLoader();
 
-        if (typeof DailyStreak !== 'undefined') { DailyStreak.init(); }
-        if (typeof GameAchievements !== 'undefined') { GameAchievements.init(); }
-        if (typeof GameAds !== 'undefined') { GameAds.init(); }
-        if (typeof Haptic !== 'undefined') { Haptic.init(); }
-
-        if (typeof gtag === 'function') {
-            gtag('event', 'page_view', { page_title: 'Trauma Response Test' });
-            setTimeout(() => {
-                gtag('event', 'page_engage', { event_category: 'trauma_response', engagement_time_msec: 5000 });
-            }, 5000);
-        }
+        this.updateDestinations();
+        this.trackStage('trauma_response_view');
     }
 
     bindEvents() {
@@ -189,20 +94,27 @@ class TraumaResponseApp {
                 langMenu.classList.toggle('hidden');
             });
             document.querySelectorAll('.lang-option').forEach(btn => {
-                btn.addEventListener('click', () => {
+                btn.addEventListener('click', async () => {
                     const lang = btn.getAttribute('data-lang');
-                    if (window.i18n) window.i18n.setLanguage(lang);
+                    if (window.i18n) await window.i18n.setLanguage(lang);
+                    this.updateDestinations();
                     langMenu.classList.add('hidden');
                 });
             });
             document.addEventListener('click', () => langMenu.classList.add('hidden'));
         }
 
-        document.getElementById('share-download')?.addEventListener('click', () => this.downloadResultCard());
-        document.getElementById('share-kakao')?.addEventListener('click', () => this.shareKakao());
-        document.getElementById('share-twitter')?.addEventListener('click', () => this.shareTwitter());
-        document.getElementById('share-facebook')?.addEventListener('click', () => this.shareFacebook());
-        document.getElementById('share-copy')?.addEventListener('click', () => this.shareCopy());
+        document.getElementById('share-page')?.addEventListener('click', () => this.sharePage());
+        document.getElementById('next-action')?.addEventListener('click', () => this.trackStage('trauma_response_next_click'));
+        document.querySelector('.related-grid')?.addEventListener('click', (event) => {
+            if (event.target.closest('.related-card')) this.trackStage('trauma_response_related_click');
+        });
+    }
+
+    updateDestinations() {
+        const lang = window.i18n?.getCurrentLanguage() || 'ko';
+        const next = document.getElementById('next-action');
+        if (next) next.href = '/stress-check/?lang=' + encodeURIComponent(lang) + '&source=trauma_response_result';
     }
 
     hideLoader() {
@@ -248,13 +160,10 @@ class TraumaResponseApp {
         this.currentQuestion = 0;
         this.answers = [];
         this.typeScores = [0, 0, 0, 0];
-        this.dimScores = [0, 0, 0, 0, 0];
         this.showScreen('question-screen');
         this.renderQuestion();
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'quiz_start', { event_category: 'trauma_response' });
-        }
+        this.trackStage('trauma_response_start');
     }
 
     renderQuestion() {
@@ -282,23 +191,21 @@ class TraumaResponseApp {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
             btn.innerHTML = '<span class="option-label">' + labels[idx] + '</span><span class="option-text">' + t(optKey) + '</span>';
-            btn.addEventListener('click', () => this.selectOption(q.id, idx, btn));
+                btn.addEventListener('click', () => this.selectOption(q.id, idx, btn), { once: true });
             container.appendChild(btn);
         });
     }
 
     selectOption(questionId, optionIdx, btn) {
+        if (btn.disabled) return;
         document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+        document.querySelectorAll('.option-btn').forEach(b => { b.disabled = true; });
         btn.classList.add('selected');
 
-        const scoreKey = questionId + String.fromCharCode(97 + optionIdx);
-        const scoreData = SCORE_MAP[scoreKey];
-        if (scoreData) {
-            for (let i = 0; i < 4; i++) this.typeScores[i] += scoreData.type[i];
-            for (let i = 0; i < 5; i++) this.dimScores[i] += scoreData.dim[i];
-        }
+        this.typeScores[optionIdx] += 1;
 
         this.answers.push({ question: questionId, option: optionIdx });
+        if (this.answers.length === 4) this.trackStage('trauma_response_progress');
 
         setTimeout(() => {
             this.currentQuestion++;
@@ -318,25 +225,10 @@ class TraumaResponseApp {
         const detail = document.getElementById('analyzing-detail');
         const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
 
-        const steps = [
-            { pct: 25, key: 'analyzing.scanning' },
-            { pct: 50, key: 'analyzing.mapping' },
-            { pct: 75, key: 'analyzing.integrating' },
-            { pct: 100, key: 'analyzing.complete' }
-        ];
-
-        let step = 0;
-        const interval = setInterval(() => {
-            if (step >= steps.length) {
-                clearInterval(interval);
-                setTimeout(() => this.showResult(), 400);
-                return;
-            }
-            if (fill) fill.style.width = steps[step].pct + '%';
-            if (percent) percent.textContent = steps[step].pct + '%';
-            if (detail) detail.textContent = t(steps[step].key);
-            step++;
-        }, 500);
+        if (fill) fill.style.width = '100%';
+        if (percent) percent.textContent = '100%';
+        if (detail) detail.textContent = t('analyzing.scanning');
+        setTimeout(() => this.showResult(), 350);
     }
 
     calculateResult() {
@@ -351,112 +243,12 @@ class TraumaResponseApp {
         return TRAUMA_TYPES[TYPE_ORDER[maxIdx]];
     }
 
-    getNormalizedDimensions() {
-        const maxPossible = 24;
-        return this.dimScores.map(s => Math.min(100, Math.round((s / maxPossible) * 100)));
-    }
-
-    drawRadarChart() {
-        const canvas = document.getElementById('radar-canvas');
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
-        const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
-
-        const w = canvas.width;
-        const h = canvas.height;
-        const cx = w / 2;
-        const cy = h / 2;
-        const radius = Math.min(cx, cy) - 40;
-        const dims = this.getNormalizedDimensions();
-        const labels = DIMENSION_KEYS.map(k => t('metric.' + k));
-        const n = 5;
-        const angleStep = (2 * Math.PI) / n;
-        const startAngle = -Math.PI / 2;
-
-        ctx.clearRect(0, 0, w, h);
-
-        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-        const gridColor = isLight ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.08)';
-        const labelColor = isLight ? '#666680' : '#8a8aaa';
-
-        for (let level = 1; level <= 4; level++) {
-            const r = (radius / 4) * level;
-            ctx.beginPath();
-            for (let i = 0; i <= n; i++) {
-                const angle = startAngle + angleStep * i;
-                const x = cx + r * Math.cos(angle);
-                const y = cy + r * Math.sin(angle);
-                if (i === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-            }
-            ctx.closePath();
-            ctx.strokeStyle = gridColor;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-        }
-
-        for (let i = 0; i < n; i++) {
-            const angle = startAngle + angleStep * i;
-            ctx.beginPath();
-            ctx.moveTo(cx, cy);
-            ctx.lineTo(cx + radius * Math.cos(angle), cy + radius * Math.sin(angle));
-            ctx.strokeStyle = gridColor;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-        }
-
-        ctx.beginPath();
-        for (let i = 0; i < n; i++) {
-            const angle = startAngle + angleStep * i;
-            const r = (dims[i] / 100) * radius;
-            const x = cx + r * Math.cos(angle);
-            const y = cy + r * Math.sin(angle);
-            if (i === 0) ctx.moveTo(x, y);
-            else ctx.lineTo(x, y);
-        }
-        ctx.closePath();
-        ctx.fillStyle = 'rgba(225,29,72,0.2)';
-        ctx.fill();
-        ctx.strokeStyle = '#e11d48';
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        for (let i = 0; i < n; i++) {
-            const angle = startAngle + angleStep * i;
-            const r = (dims[i] / 100) * radius;
-            const x = cx + r * Math.cos(angle);
-            const y = cy + r * Math.sin(angle);
-            ctx.beginPath();
-            ctx.arc(x, y, 4, 0, 2 * Math.PI);
-            ctx.fillStyle = '#e11d48';
-            ctx.fill();
-            ctx.strokeStyle = '#fff';
-            ctx.lineWidth = 1.5;
-            ctx.stroke();
-        }
-
-        ctx.font = '12px -apple-system, BlinkMacSystemFont, sans-serif';
-        ctx.fillStyle = labelColor;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        for (let i = 0; i < n; i++) {
-            const angle = startAngle + angleStep * i;
-            const labelR = radius + 24;
-            const x = cx + labelR * Math.cos(angle);
-            const y = cy + labelR * Math.sin(angle);
-            ctx.fillText(labels[i], x, y);
-        }
-    }
-
     showResult() {
         this.resultType = this.calculateResult();
         const type = this.resultType;
         const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
 
         this.showScreen('result-screen');
-        this.trackEvent('trauma_response_result_view');
-        this.trackEvent('result_view', { event_category: 'trauma_response', event_label: type.id, value: 1 });
-        this.loadResultAd();
 
         const emoji = document.getElementById('result-emoji');
         if (emoji) emoji.textContent = type.emoji;
@@ -467,51 +259,8 @@ class TraumaResponseApp {
         const tagline = document.getElementById('result-tagline');
         if (tagline) tagline.textContent = '"' + t(type.taglineKey) + '"';
 
-        const desc = document.getElementById('result-description');
-        if (desc) desc.textContent = t(type.descKey);
-
-        this.drawRadarChart();
-
-        const dims = this.getNormalizedDimensions();
-        const metricsGrid = document.getElementById('metrics-grid');
-        if (metricsGrid) {
-            metricsGrid.innerHTML = '';
-            DIMENSION_KEYS.forEach((key, idx) => {
-                const row = document.createElement('div');
-                row.className = 'metric-row';
-                row.innerHTML = '<span class="metric-label">' + t('metric.' + key) + '</span>' +
-                    '<div class="metric-bar-bg"><div class="metric-bar-fill" style="background:' + type.color + '"></div></div>' +
-                    '<span class="metric-value">' + dims[idx] + '</span>';
-                metricsGrid.appendChild(row);
-                setTimeout(() => {
-                    row.querySelector('.metric-bar-fill').style.width = dims[idx] + '%';
-                }, 100);
-            });
-        }
-
-        const percentile = document.getElementById('percentile-stat');
-        const pctVal = Math.floor(Math.random() * 20) + 15;
-        if (percentile) {
-            percentile.innerHTML = t('result.percentile').replace('{pct}', '<strong>' + pctVal + '%</strong>').replace('{type}', t(type.nameKey));
-        }
-
-        const traitsList = document.getElementById('traits-list');
-        if (traitsList) {
-            traitsList.innerHTML = '';
-            type.traitsKeys.forEach(key => {
-                const tag = document.createElement('span');
-                tag.className = 'trait-tag';
-                tag.textContent = t(key);
-                traitsList.appendChild(tag);
-            });
-        }
-
-        const copingText = document.getElementById('coping-tip-text');
-        if (copingText) copingText.textContent = t(type.tipKey);
-
         this.spawnConfetti();
-
-        this.trackEvent('quiz_complete', { event_category: 'trauma_response', event_label: type.id, value: 1 });
+        this.trackStage('trauma_response_complete');
     }
 
     spawnConfetti() {
@@ -535,82 +284,32 @@ class TraumaResponseApp {
         window.scrollTo(0, 0);
     }
 
-    getShareText() {
-        if (!this.resultType) return '';
-        const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
-        return t('share.text').replace('{type}', t(this.resultType.nameKey));
-    }
-
-    getShareUrl() {
-        return 'https://dopabrain.com/trauma-response/';
-    }
-
-    shareKakao() {
-        const text = this.getShareText();
-        this.trackEvent('trauma_response_share_click', { share_channel: 'kakao' });
-        const url = 'https://sharer.kakao.com/talk/friends/picker/link?url=' + encodeURIComponent(this.getShareUrl()) + '&text=' + encodeURIComponent(text);
-        window.open(url, '_blank', 'width=600,height=400');
-    }
-
-    shareTwitter() {
-        const text = this.getShareText();
-        this.trackEvent('trauma_response_share_click', { share_channel: 'twitter' });
-        const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(this.getShareUrl());
-        window.open(url, '_blank', 'width=600,height=400');
-    }
-
-    shareFacebook() {
-        this.trackEvent('trauma_response_share_click', { share_channel: 'facebook' });
-        const url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(this.getShareUrl());
-        window.open(url, '_blank', 'width=600,height=400');
-    }
-
-    async shareCopy() {
-        const text = this.getShareText() + ' ' + this.getShareUrl();
-        this.trackEvent('trauma_response_copy_link');
+    async sharePage() {
+        const t = window.i18n ? window.i18n.t.bind(window.i18n) : (key) => key;
+        const shareData = {
+            title: t('meta.og_title'),
+            text: t('share.text'),
+            url: 'https://dopabrain.com/trauma-response/'
+        };
         try {
-            await navigator.clipboard.writeText(text);
-            const btn = document.getElementById('share-copy');
-            if (btn) {
-                const original = btn.textContent;
-                btn.textContent = '\u{2705} Copied!';
-                setTimeout(() => btn.textContent = original, 2000);
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } else {
+                await navigator.clipboard.writeText(shareData.text + ' ' + shareData.url);
+            }
+            this.trackStage('trauma_response_share');
+            const button = document.getElementById('share-page');
+            if (button) {
+                const original = button.textContent;
+                button.textContent = t('share.success');
+                setTimeout(() => { button.textContent = original; }, 2000);
             }
         } catch (e) {
-            const ta = document.createElement('textarea');
-            ta.value = text;
-            document.body.appendChild(ta);
-            ta.select();
-            document.execCommand('copy');
-            document.body.removeChild(ta);
+            if (e?.name !== 'AbortError') console.error('Share failed');
         }
-    }
-
-    downloadResultCard() {
-        if (!this.resultType || typeof ResultCard === 'undefined') return;
-        this.trackEvent('trauma_response_save_click');
-
-        const t = window.i18n ? window.i18n.t.bind(window.i18n) : (k) => k;
-        const dims = this.getNormalizedDimensions();
-        const dimLabels = DIMENSION_KEYS.map(k => t('metric.' + k));
-
-        const dimensions = dimLabels.map((label, i) => ({
-            label: label,
-            pct: dims[i],
-            color: this.resultType.color
-        }));
-
-        ResultCard.download({
-            appName: 'Trauma Response Test',
-            typeName: t(this.resultType.nameKey),
-            typeEmoji: this.resultType.emoji,
-            dimensions: dimensions,
-            primaryColor: '#e11d48',
-            tagline: 'dopabrain.com/trauma-response'
-        });
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new TraumaResponseApp();
+    window.traumaResponseApp = new TraumaResponseApp();
 });

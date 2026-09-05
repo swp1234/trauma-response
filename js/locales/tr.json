@@ -1,12 +1,11 @@
 {
   "meta": {
     "page_title": "Travma Tepkisi Testi - Savaş, Kaç, Donma mı Uyum mu? | DopaBrain",
-    "description": "Travma tepkiniz Savaş, Kaç, Donma mı yoksa Uyum mu? 8 soru, sinir sisteminizin hayatta kalma düzenini ve ilişkilerinizi nasıl şekillendirdiğini ortaya koyuyor.",
-    "keywords": "travma tepkisi testi, savaş kaç donma uyum, travma tepkisi sınavı, sinir sistemi testi, 4F travma tepkisi, PTSD sınavı, travma tipi testi, hayatta kalma tepkisi, polivagal teori, travma iyileşmesi",
+    "description": "Sekiz g?ndelik stres durumunda en s?k se?ti?iniz tepkiyi kar??la?t?r?n: y?zle?mek, uzakla?mak, durmak veya uyum sa?lamak. Tan? de?il, ?zel bir d???nme etkinli?idir.",
     "og_title": "Travma Tepkisi Testi - Savaş, Kaç, Donma mı Uyum mu?",
-    "og_description": "8 soru hayatta kalma düzeninizi ortaya çıkarıyor! Sinir sisteminizin varsayılan tepkisini keşfedin.",
+    "og_description": "D?rt tepki se?ene?ini kar??la?t?ran sekiz durumluk bir d???nme etkinli?i.",
     "twitter_title": "Travma Tepkisi Testi - Savaş, Kaç, Donma mı Uyum mu?",
-    "twitter_description": "8 soru hayatta kalma düzeninizi ortaya çıkarıyor!"
+    "twitter_description": "D?rt tepki se?ene?ini kar??la?t?ran sekiz durumluk bir d???nme etkinli?i."
   },
   "app": {
     "skipLink": "Ana içeriğe geç",
@@ -15,11 +14,10 @@
   "intro": {
     "title": "Travma Tepkisi Testi",
     "subtitle": "Savaş, Kaç, Donma mı Uyum mu?",
-    "social_proof": "kişi keşfetti",
     "feature_types": "4 tepki tipi",
     "feature_questions": "8 senaryo",
-    "feature_metrics": "5 boyut",
-    "time_estimate": "Yaklaşık 2 dakika sürer"
+    "time_estimate": "Yaklaşık 2 dakika sürer",
+    "boundary": "Bu ?zg?n etkinlik ki?isel d???nme i?indir. Travma, TSSB veya herhangi bir sa?l?k durumunu te?his etmez."
   },
   "carousel": {
     "fight": "Savaş",
@@ -30,124 +28,87 @@
   "button": {
     "start": "Tepkinizi Keşfedin",
     "retry": "Tekrar Dene",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Bağlantıyı Kopyala"
+    "next_action": "Bu d???nceyi 3 ad?ml? plana d?n??t?r",
+    "share": "Bu etkinli?i payla?"
   },
   "question": {
     "0": "Birisi size aniden öfkeyle bağırıyor. İlk tepkiniz ne olur?",
+    "1": "İşte haksızlığa uğradığınızda, düzeniniz nedir?",
+    "2": "Yakın bir arkadaşınızın sırrınızı başkalarıyla paylaştığını öğrendiğinizde?",
+    "3": "Önemli bir teslim tarihinden hemen önce beklenmedik bir sorun çıktığında?",
+    "4": "Partneriniz aniden 'konuşmamız gerek' diyor. Tepkiniz?",
+    "5": "Gece geç saatlerde kötü bir anı aniden yüzeye çıkıyor. Ne yapıyorsunuz?",
+    "6": "Kalabalığın önünde hata yaptığınızda. Tepkiniz?",
+    "7": "Uyumadan önce kendinizi düşünürken, ilk gelen düşünce ne?",
     "0a": "Hemen karşılık veriyorum ve neden bağırdığını soruyorum",
     "0b": "Ortamdan hızla uzaklaşıyor veya konuyu değiştiriyorum",
     "0c": "Aklım boşalıyor ve hiçbir şey söyleyemiyorum",
     "0d": "Önce özür diliyorum ve onları sakinleştirmeye çalışıyorum",
-
-    "1": "İşte haksızlığa uğradığınızda, düzeniniz nedir?",
     "1a": "Öfkemi ifade ediyorum ve konuyu hemen gündeme getiriyorum",
     "1b": "İş arama sitelerine bakmaya başlıyorum veya başka işlere dalıyorum",
     "1c": "Hissizleşiyorum ve 'zaten böyle' diye düşünüyorum",
     "1d": "Patronumun durumunu anlamaya çalışıyorum ve daha çok çalışıyorum",
-
-    "2": "Yakın bir arkadaşınızın sırrınızı başkalarıyla paylaştığını öğrendiğinizde?",
     "2a": "Onlarla doğrudan ve kararlı bir şekilde yüzleşiyorum",
     "2b": "İletişimi kesiyorum ve mesafe koyuyorum",
     "2c": "İhanete uğramış hissediyorum ve donup kalıyorum, hiçbir şey yapamıyorum",
     "2d": "Mutlaka iyi bir nedenleri vardır diye gerekçelendiriyorum",
-
-    "3": "Önemli bir teslim tarihinden hemen önce beklenmedik bir sorun çıktığında?",
     "3a": "Tüm enerjimi nedeni bulup düzeltmeye harcıyorum",
     "3b": "Önce diğer acil işleri hallediyorum, asıl sorundan kaçınıyorum",
     "3c": "Paniğe kapılıyorum ve hiçbir şey yönetilebilir görünmüyor",
     "3d": "Herkesten yardım istiyorum ve onların önerilerini takip ediyorum",
-
-    "4": "Partneriniz aniden 'konuşmamız gerek' diyor. Tepkiniz?",
     "4a": "Savunmaya geçiyorum — 'Ne yanlış yaptım?'",
     "4b": "Endişe basıyor ve kafamda en kötü senaryoları kuruyorum",
     "4c": "Duygularım kapanıyor ve boş bir ifadeyle oturuyorum",
     "4d": "Hemen 'Değişeceğim, ne istiyorsun?' diyorum",
-
-    "5": "Gece geç saatlerde kötü bir anı aniden yüzeye çıkıyor. Ne yapıyorsunuz?",
     "5a": "Öfke yükseliyor ve yastığa yumruk atıyor veya egzersiz yapıyorum",
     "5b": "Netflix açıyor veya kaçmak için sosyal medyayı kaydırıyorum",
     "5c": "Vücudum donuyor ve sadece tavana bakıyorum",
     "5d": "Birine mesaj atıp iyiymiş gibi yaparak sıradan bir sohbet başlatıyorum",
-
-    "6": "Kalabalığın önünde hata yaptığınızda. Tepkiniz?",
     "6a": "Kendimden emin bir şekilde geçiştiriyorum veya suçu başkasına atıyorum",
     "6b": "Yüzüm kızarıyor ve hemen ayrılmak istiyorum",
     "6c": "Zaman durmuş gibi oluyor ve hiç tepki veremiyorum",
     "6d": "Tekrar tekrar özür diliyorum ve herkesin duygularını kontrol ediyorum",
-
-    "7": "Uyumadan önce kendinizi düşünürken, ilk gelen düşünce ne?",
     "7a": "Dünya beni rahat bırakmayacak — her zaman savaşmaya hazırım",
     "7b": "Buradan çok uzakta bir yere kaçmak istiyorum",
     "7c": "Hiçbir şey hissetmediğim bir boşluk var",
     "7d": "Etrafımdaki herkesi hayal kırıklığına uğratıp uğratmadığımı merak ediyorum"
   },
   "analyzing": {
-    "title": "Tepkileriniz analiz ediliyor...",
-    "scanning": "Sinir sistemi desenleri taranıyor...",
-    "mapping": "Hayatta kalma tepkileri haritalandırılıyor...",
-    "integrating": "4F profili oluşturuluyor...",
-    "complete": "Analiz tamamlandı!"
+    "title": "?zetiniz haz?rlan?yor?",
+    "scanning": "Sekiz se?iminiz kar??la?t?r?l?yor?"
   },
   "result": {
-    "your_type": "Travma Tepkiniz",
-    "response_dimensions": "Tepki Boyutları",
-    "dimension_scores": "Boyut Skorları",
-    "key_traits": "Tepki Desenleri",
-    "coping_tip": "İyileşme İçgörüsü",
-    "percentile": "Sadece {pct} kişi {type} tepkisini paylaşıyor",
+    "your_type": "En ?ok se?ti?iniz tepki",
+    "boundary": "Bu ?zet yaln?zca burada yapt???n?z se?imleri sayar. Tan? veya do?rulanm?? de?erlendirme de?ildir ve her durumdaki tepkinizi kan?tlamaz.",
+    "calculation": "??leyi?: her yan?t bir tepki etiketine bir puan ekler. En ?ok se?ilen etiket g?sterilir; e?itlikte ilk e?le?en etiket kullan?l?r.",
     "moreTests": "Daha Fazlasını Keşfedin",
     "share": "Sonucunuzu Paylaşın"
-  },
-  "metric": {
-    "hypervigilance": "Aşırı Tetikte Olma",
-    "emotional_regulation": "Duygu Düzenleme",
-    "dissociation": "Ayrışma",
-    "boundaries": "Sınırlar",
-    "resilience": "Dayanıklılık"
   },
   "type": {
     "fight": {
       "name": "Savaş Tepkisi",
-      "tagline": "Tehdidden asla geri adım atmayan bir savaşçı",
-      "description": "Sinir sisteminiz bir tehdit algıladığı anda savaş moduna geçer. Bu güçlü hayatta kalma stratejisi, çocuklukta kendinizi korumak için gelişti. Güçlü irade ve liderlik özellikleriniz var, ama bazen öfke kontrol ve savunma için bir maske oluyor. Gerçek güç, savunmasız olmaya izin vermekten gelir.",
-      "trait1": "Anlık öfke tepkisi",
-      "trait2": "Kontrol ihtiyacı",
-      "trait3": "Aşırı tetikte olma",
-      "tip": "Öfkenizin arkasında saklanan duyguları keşfedin. Öfke genellikle korku, üzüntü veya incinme için bir kalkandır. Kendinize sorun: 'Şu an gerçekten kızgın mıyım, yoksa korkuyor muyum?'"
+      "tagline": "En s?k do?rudan y?zle?meyi se?tiniz"
     },
     "flight": {
       "name": "Kaçış Tepkisi",
-      "tagline": "Tehlikeden içgüdüsel olarak kaçan bir hayatta kalan",
-      "description": "Sinir sisteminiz bir tehdit algıladığı anda kaçış moduna geçer. Bu, geçmişte sizi güvende tutan kritik bir stratejiydi. Yüksek üretkenliğiniz ve sürekli aktivitenizin arkasında, rahatsız edici duygulardan kaçınmanın bilinçsiz bir deseni olabilir. Durmak da bir cesaret gerektirir.",
-      "trait1": "Hiperaktivite / İşkoliklik",
-      "trait2": "Kaçınmacı başa çıkma",
-      "trait3": "Endişe ve huzursuzluk",
-      "tip": "Meşguliyetinizin arkasında saklanan kaçınmayı fark edin. Günde sadece 5 dakikanızı kesinlikle hiçbir şey yapmadan geçirmeyi deneyin. Rahatsızlık bir tehlike sinyali değil — iyileşmenin başlangıç noktasıdır."
+      "tagline": "En s?k durumdan uzakla?may? se?tiniz"
     },
     "freeze": {
       "name": "Donma Tepkisi",
-      "tagline": "Bunaldığında koruyucu bir kapanma",
-      "description": "Sinir sisteminiz tehdit çok bunaltıcı hissettiğinde kapatma moduna geçer. Bu, dayanılmaz hissettiren şeylerden kendinizi korumak için doğal bir tepkidir. Hissizlik ve ayrışmanın arkasında, işlenmemiş duygular güvenle bekliyor. Küçük şeyleri yeniden hissetmeye başlayabilirsiniz.",
-      "trait1": "Duygusal hissizlik",
-      "trait2": "Ayrışma / Dalgınlık",
-      "trait3": "Erteleme desenleri",
-      "tip": "Küçük duyularla yeniden bağlantı kurun. Ellerinizi ılık suya batırın veya bir buz küpü tutun. Vücudunuzun duyularını geri almak, donmadan çıkmanın ilk adımıdır."
+      "tagline": "En s?k durmay? se?tiniz"
     },
     "fawn": {
       "name": "Uyum Tepkisi",
-      "tagline": "Çatışmadan kaçınmak için kendini teslim eden bir uyumcu",
-      "description": "Sinir sisteminiz bir tehdit algıladığında yatıştırma ve memnun etme moduna geçer. Bu akıllı hayatta kalma stratejisi, çatışmanın tehlikeli olduğu ortamlarda gelişti. Mükemmel empati ve ilişki becerilerinizin arkasında 'gerçek benliğinizi' kaybetme korkusu saklanıyor olabilir. Sizin ihtiyaçlarınız da önemlidir.",
-      "trait1": "Aşırı özür dileme ve boyun eğme",
-      "trait2": "Sınır koyma zorluğu",
-      "trait3": "Benlik kimliği kaybı",
-      "tip": "Her gün küçük bir 'hayır' pratiği yapın. Hayır demek karşıdakini reddetmek değil — kendinizi seçmektir. Şunu sorarak başlayın: 'Ben aslında ne istiyorum?'"
+      "tagline": "En s?k ba?kalar?na uyum sa?lamay? se?tiniz"
     }
   },
   "share": {
-    "text": "Benim travma tepki tipim '{type}'! Sizin hayatta kalma düzeniniz ne?"
+    "text": "Sekiz g?ndelik durumda se?imlerinizi d???n?n.",
+    "success": "Payla??ld?"
+  },
+  "related": {
+    "attachment": "Ba?lanma tepkisi d???ncesi",
+    "brain": "Karar tarz? testi"
   },
   "game": {
     "back": "DopaBrain Home"

@@ -1,12 +1,11 @@
 {
   "meta": {
     "page_title": "Test de Respuesta al Trauma - ¿Lucha, Huida, Congelación o Complacencia? | DopaBrain",
-    "description": "¿Tu respuesta al trauma es Lucha, Huida, Congelación o Complacencia? 8 preguntas revelan el patrón de supervivencia de tu sistema nervioso y cómo moldea tus relaciones.",
-    "keywords": "test respuesta trauma, lucha huida congelación complacencia, quiz respuesta trauma, test sistema nervioso, respuesta 4F trauma, quiz TEPT, test tipo trauma, respuesta supervivencia, teoría polivagal, sanación trauma",
+    "description": "Compara c?mo respondes en ocho situaciones cotidianas de estr?s: afrontar, alejarte, pausar o adaptarte. Es una reflexi?n privada, no un diagn?stico.",
     "og_title": "Test de Respuesta al Trauma - ¿Lucha, Huida, Congelación o Complacencia?",
-    "og_description": "¡8 preguntas revelan tu patrón de supervivencia! Descubre la respuesta predeterminada de tu sistema nervioso.",
+    "og_description": "Una reflexi?n de ocho situaciones sobre afrontar, alejarte, pausar y adaptarte.",
     "twitter_title": "Test de Respuesta al Trauma - ¿Lucha, Huida, Congelación o Complacencia?",
-    "twitter_description": "¡8 preguntas revelan tu patrón de supervivencia!"
+    "twitter_description": "Una reflexi?n de ocho situaciones sobre afrontar, alejarte, pausar y adaptarte."
   },
   "app": {
     "skipLink": "Saltar al contenido",
@@ -15,11 +14,10 @@
   "intro": {
     "title": "Test de Respuesta al Trauma",
     "subtitle": "¿Lucha, Huida, Congelación o Complacencia?",
-    "social_proof": "personas descubrieron",
     "feature_types": "4 tipos de respuesta",
     "feature_questions": "8 escenarios",
-    "feature_metrics": "5 dimensiones",
-    "time_estimate": "Toma alrededor de 2 minutos"
+    "time_estimate": "Toma alrededor de 2 minutos",
+    "boundary": "Esta actividad original es para reflexi?n privada. No diagnostica trauma, TEPT ni ninguna condici?n de salud."
   },
   "carousel": {
     "fight": "Lucha",
@@ -30,124 +28,87 @@
   "button": {
     "start": "Descubre tu Respuesta",
     "retry": "Intentar de Nuevo",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Copiar Enlace"
+    "next_action": "Convierte esta reflexi?n en un plan de 3 pasos",
+    "share": "Compartir esta actividad"
   },
   "question": {
     "0": "Alguien te grita enojado de repente. ¿Cuál es tu primera reacción?",
+    "1": "Cuando te tratan injustamente en el trabajo, ¿cuál es tu patrón?",
+    "2": "¿Cuando descubres que un amigo cercano compartió tu secreto con otros?",
+    "3": "¿Justo antes de una fecha límite importante, surge un problema inesperado?",
+    "4": "Tu pareja dice de repente 'necesitamos hablar'. ¿Tu reacción?",
+    "5": "Tarde en la noche, un mal recuerdo surge de repente. ¿Qué haces?",
+    "6": "Cometes un error frente a una multitud. ¿Tu respuesta?",
+    "7": "Reflexionando sobre ti mismo antes de dormir, ¿qué pensamiento viene primero?",
     "0a": "Respondo de inmediato y les confronto sobre por qué",
     "0b": "Salgo rápidamente de la situación o cambio de tema",
     "0c": "Mi mente se queda en blanco y no puedo decir nada",
     "0d": "Me disculpo primero e intento calmarles",
-
-    "1": "Cuando te tratan injustamente en el trabajo, ¿cuál es tu patrón?",
     "1a": "Expreso mi enojo y planteo el problema de inmediato",
     "1b": "Empiezo a buscar ofertas de empleo o me sumerjo en otro trabajo",
     "1c": "Me insensibilizo y pienso 'así son las cosas'",
     "1d": "Intento entender la posición de mi jefe y trabajo aún más duro",
-
-    "2": "¿Cuando descubres que un amigo cercano compartió tu secreto con otros?",
     "2a": "Les confronto directamente y con firmeza",
     "2b": "Corto el contacto y creo distancia",
     "2c": "Me siento traicionado y me congelo, sin poder hacer nada",
     "2d": "Racionalizo que deben haber tenido una buena razón",
-
-    "3": "¿Justo antes de una fecha límite importante, surge un problema inesperado?",
     "3a": "Pongo toda mi energía en encontrar y solucionar la causa",
     "3b": "Manejo otras tareas urgentes primero, evitando el problema real",
     "3c": "Entro en pánico y nada parece manejable",
     "3d": "Pido ayuda a todos a mi alrededor y sigo sus sugerencias",
-
-    "4": "Tu pareja dice de repente 'necesitamos hablar'. ¿Tu reacción?",
     "4a": "Me pongo a la defensiva — '¿Qué hice mal?'",
     "4b": "La ansiedad me golpea y empiezo a imaginar los peores escenarios en mi cabeza",
     "4c": "Mis emociones se apagan y solo me quedo ahí sentado en blanco",
     "4d": "Digo inmediatamente 'cambiaré, ¿qué quieres?'",
-
-    "5": "Tarde en la noche, un mal recuerdo surge de repente. ¿Qué haces?",
     "5a": "La ira sube y golpeo una almohada o hago ejercicio",
     "5b": "Pongo Netflix o navego en redes sociales para escapar",
     "5c": "Mi cuerpo se congela y solo miro al techo",
     "5d": "Envío un mensaje a alguien y empiezo una conversación casual fingiendo que estoy bien",
-
-    "6": "Cometes un error frente a una multitud. ¿Tu respuesta?",
     "6a": "Lo minimizo con confianza o desvío la culpa",
     "6b": "Mi cara se pone roja y quiero irme de inmediato",
     "6c": "El tiempo parece detenerse y no puedo reaccionar en absoluto",
     "6d": "Me disculpo profusamente y verifico los sentimientos de todos",
-
-    "7": "Reflexionando sobre ti mismo antes de dormir, ¿qué pensamiento viene primero?",
     "7a": "El mundo no me dejará en paz — siempre estoy listo para luchar",
     "7b": "Quiero escapar a algún lugar lejos de aquí",
     "7c": "Hay un vacío donde no siento nada en absoluto",
     "7d": "Me preocupo si he decepcionado a todos a mi alrededor"
   },
   "analyzing": {
-    "title": "Analizando tus respuestas...",
-    "scanning": "Escaneando patrones del sistema nervioso...",
-    "mapping": "Mapeando respuestas de supervivencia...",
-    "integrating": "Construyendo perfil 4F...",
-    "complete": "¡Análisis completo!"
+    "title": "Preparando tu resumen?",
+    "scanning": "Comparando tus ocho elecciones?"
   },
   "result": {
-    "your_type": "Tu Respuesta al Trauma",
-    "response_dimensions": "Dimensiones de Respuesta",
-    "dimension_scores": "Puntuaciones de Dimensión",
-    "key_traits": "Patrones de Respuesta",
-    "coping_tip": "Perspectiva de Sanación",
-    "percentile": "Solo {pct} de las personas comparten la respuesta {type}",
+    "your_type": "Tu respuesta m?s elegida",
+    "boundary": "Este resumen solo cuenta tus elecciones aqu?. No es un diagn?stico ni una evaluaci?n validada, y no prueba c?mo respondes en todas las situaciones.",
+    "calculation": "C?mo funciona: cada respuesta suma un punto a una etiqueta. Se muestra la m?s elegida; en caso de empate se usa la primera coincidencia.",
     "moreTests": "Explorar Más",
     "share": "Compartir tu Resultado"
-  },
-  "metric": {
-    "hypervigilance": "Hipervigilancia",
-    "emotional_regulation": "Regulación Emocional",
-    "dissociation": "Disociación",
-    "boundaries": "Límites",
-    "resilience": "Resiliencia"
   },
   "type": {
     "fight": {
       "name": "Respuesta de Lucha",
-      "tagline": "Un guerrero que nunca retrocede ante la amenaza",
-      "description": "Tu sistema nervioso cambia a modo de combate en el momento en que detecta una amenaza. Esta poderosa estrategia de supervivencia se desarrolló en la infancia para protegerte. Tienes una fuerte voluntad y liderazgo, pero a veces la ira se convierte en una máscara de control y defensa. La verdadera fuerza viene de permitir la vulnerabilidad.",
-      "trait1": "Respuesta de ira inmediata",
-      "trait2": "Necesidad de control",
-      "trait3": "Vigilancia excesiva",
-      "tip": "Explora las emociones que se esconden detrás de tu ira. La ira a menudo es un escudo para el miedo, la tristeza o el dolor. Pregúntate: '¿Estoy realmente enojado ahora mismo, o tengo miedo?'"
+      "tagline": "Elegiste afrontar directamente con m?s frecuencia"
     },
     "flight": {
       "name": "Respuesta de Huida",
-      "tagline": "Un sobreviviente que instintivamente huye del peligro",
-      "description": "Tu sistema nervioso cambia a modo de escape en el momento en que detecta una amenaza. Esta fue una estrategia crucial que te mantuvo a salvo en el pasado. Detrás de tu alta productividad y actividad constante, puede haber un patrón inconsciente de evitar emociones incómodas. Detenerse también es valentía.",
-      "trait1": "Hiperactividad / Adicción al trabajo",
-      "trait2": "Afrontamiento evitativo",
-      "trait3": "Ansiedad e inquietud",
-      "tip": "Nota la evitación oculta detrás de tu ocupación. Intenta pasar solo 5 minutos al día sin hacer absolutamente nada. La incomodidad no es una señal de peligro — es el punto de partida de la sanación."
+      "tagline": "Elegiste alejarte con m?s frecuencia"
     },
     "freeze": {
       "name": "Respuesta de Congelación",
-      "tagline": "Un apagado protector cuando estás abrumado",
-      "description": "Tu sistema nervioso se desplaza al modo de apagado cuando la amenaza se siente demasiado abrumadora. Esta es una respuesta natural para protegerte de lo que se siente insoportable. Detrás del entumecimiento y la disociación, las emociones no procesadas están esperando de forma segura. Puedes comenzar sintiendo pequeñas cosas nuevamente.",
-      "trait1": "Entumecimiento emocional",
-      "trait2": "Disociación / Desconexión",
-      "trait3": "Patrones de procrastinación",
-      "tip": "Reconecta con pequeñas sensaciones. Sumerge tus manos en agua tibia o sostén un cubo de hielo. Reclamar las sensaciones de tu cuerpo es el primer paso fuera de la congelación."
+      "tagline": "Elegiste pausar con m?s frecuencia"
     },
     "fawn": {
       "name": "Respuesta de Complacencia",
-      "tagline": "Un armonizador que se rinde a sí mismo para evitar conflictos",
-      "description": "Tu sistema nervioso cambia a modo de apaciguar y complacer cuando detecta una amenaza. Esta inteligente estrategia de supervivencia se desarrolló en entornos donde el conflicto era peligroso. Detrás de tu excelente empatía y habilidades de relación puede esconderse un miedo a perder tu 'yo real'. Tus necesidades también importan.",
-      "trait1": "Disculpa y cesión excesivas",
-      "trait2": "Dificultad para establecer límites",
-      "trait3": "Pérdida de identidad propia",
-      "tip": "Practica un pequeño 'no' cada día. Decir no no es rechazar a la otra persona — es elegirte a ti mismo. Comienza preguntando: '¿Qué es lo que realmente quiero?'"
+      "tagline": "Elegiste adaptarte a otros con m?s frecuencia"
     }
   },
   "share": {
-    "text": "¡Mi tipo de respuesta al trauma es '{type}'! ¿Cuál es tu patrón de supervivencia?"
+    "text": "Reflexiona sobre tus elecciones en ocho situaciones cotidianas.",
+    "success": "Compartido"
+  },
+  "related": {
+    "attachment": "Reflexi?n sobre apego",
+    "brain": "Test de estilo de decisi?n"
   },
   "game": {
     "back": "DopaBrain Home"
