@@ -105,9 +105,32 @@ class TraumaResponseApp {
         }
 
         document.getElementById('share-page')?.addEventListener('click', () => this.sharePage());
-        document.getElementById('next-action')?.addEventListener('click', () => this.trackStage('trauma_response_next_click'));
-        document.querySelector('.related-grid')?.addEventListener('click', (event) => {
-            if (event.target.closest('.related-card')) this.trackStage('trauma_response_related_click');
+        const next = document.getElementById('next-action');
+        if (next) {
+            next.addEventListener('click', () => {
+                this.trackStage('trauma_response_next_click');
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        link_id: 'trauma_response_next_stress_check',
+                        link_text: (next.textContent || '').trim().slice(0, 40),
+                        target_url: next.href || '',
+                        source_page: 'trauma_response_result'
+                    });
+                }
+            });
+        }
+        document.querySelectorAll('.related-grid a.related-card').forEach(link => {
+            link.addEventListener('click', () => {
+                this.trackStage('trauma_response_related_click');
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        link_id: 'trauma_response_related_' + (link.dataset.relatedSlug || 'companion'),
+                        link_text: (link.textContent || '').trim().slice(0, 40),
+                        target_url: link.href || '',
+                        source_page: 'trauma_response_result'
+                    });
+                }
+            });
         });
     }
 
@@ -115,6 +138,13 @@ class TraumaResponseApp {
         const lang = window.i18n?.getCurrentLanguage() || 'ko';
         const next = document.getElementById('next-action');
         if (next) next.href = '/stress-check/?lang=' + encodeURIComponent(lang) + '&source=trauma_response_result';
+
+        document.querySelectorAll('.related-grid a.related-card').forEach(link => {
+            const slug = link.dataset.relatedSlug;
+            if (slug) {
+                link.href = '/' + slug + '/?lang=' + encodeURIComponent(lang) + '&source=trauma_response_related';
+            }
+        });
     }
 
     hideLoader() {
