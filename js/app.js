@@ -119,8 +119,9 @@ class TraumaResponseApp {
                 }
             });
         }
-        document.querySelectorAll('.related-grid a.related-card').forEach(link => {
-            link.addEventListener('click', () => {
+        document.querySelector('.related-grid')?.addEventListener('click', (event) => {
+            const link = event.target.closest('.related-card');
+            if (link) {
                 this.trackStage('trauma_response_related_click');
                 if (typeof gtag === 'function') {
                     gtag('event', 'content_cta_click', {
@@ -130,7 +131,7 @@ class TraumaResponseApp {
                         source_page: 'trauma_response_result'
                     });
                 }
-            });
+            }
         });
     }
 
