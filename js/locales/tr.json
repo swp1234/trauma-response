@@ -17,7 +17,8 @@
     "feature_types": "4 tepki tipi",
     "feature_questions": "8 senaryo",
     "time_estimate": "Yaklaşık 2 dakika sürer",
-    "boundary": "Bu ?zg?n etkinlik ki?isel d???nme i?indir. Travma, TSSB veya herhangi bir sa?l?k durumunu te?his etmez."
+    "boundary": "Bu ?zg?n etkinlik ki?isel d???nme i?indir. Travma, TSSB veya herhangi bir sa?l?k durumunu te?his etmez.",
+    "feature_metrics": "5 boyut"
   },
   "carousel": {
     "fight": "Savaş",

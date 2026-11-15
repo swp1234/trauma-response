@@ -17,7 +17,8 @@
     "feature_types": "4 tipos de resposta",
     "feature_questions": "8 cenários",
     "time_estimate": "Leva cerca de 2 minutos",
-    "boundary": "Esta atividade autoral serve para reflex?o privada. N?o diagnostica trauma, TEPT ou qualquer condi??o de sa?de."
+    "boundary": "Esta atividade autoral serve para reflex?o privada. N?o diagnostica trauma, TEPT ou qualquer condi??o de sa?de.",
+    "feature_metrics": "5 dimensões"
   },
   "carousel": {
     "fight": "Luta",

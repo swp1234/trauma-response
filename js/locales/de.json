@@ -17,7 +17,8 @@
     "feature_types": "4 Reaktionstypen",
     "feature_questions": "8 Szenarien",
     "time_estimate": "Dauert etwa 2 Minuten",
-    "boundary": "Diese selbst erstellte Aktivit?t dient der privaten Reflexion. Sie diagnostiziert weder Trauma, PTBS noch andere Gesundheitszust?nde."
+    "boundary": "Diese selbst erstellte Aktivit?t dient der privaten Reflexion. Sie diagnostiziert weder Trauma, PTBS noch andere Gesundheitszust?nde.",
+    "feature_metrics": "5 Dimensionen"
   },
   "carousel": {
     "fight": "Kampf",

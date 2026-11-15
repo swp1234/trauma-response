@@ -17,7 +17,8 @@
     "feature_types": "4 types de réponses",
     "feature_questions": "8 scénarios",
     "time_estimate": "Environ 2 minutes",
-    "boundary": "Cette activit? originale sert ? la r?flexion priv?e. Elle ne diagnostique ni traumatisme, ni TSPT, ni aucun probl?me de sant?."
+    "boundary": "Cette activit? originale sert ? la r?flexion priv?e. Elle ne diagnostique ni traumatisme, ni TSPT, ni aucun probl?me de sant?.",
+    "feature_metrics": "5 dimensions"
   },
   "carousel": {
     "fight": "Combat",

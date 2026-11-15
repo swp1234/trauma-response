@@ -17,7 +17,8 @@
     "feature_types": "4 tipe respons",
     "feature_questions": "8 skenario",
     "time_estimate": "Sekitar 2 menit",
-    "boundary": "Aktivitas buatan penulis ini untuk refleksi pribadi. Ini tidak mendiagnosis trauma, PTSD, atau kondisi kesehatan apa pun."
+    "boundary": "Aktivitas buatan penulis ini untuk refleksi pribadi. Ini tidak mendiagnosis trauma, PTSD, atau kondisi kesehatan apa pun.",
+    "feature_metrics": "5 dimensi"
   },
   "carousel": {
     "fight": "Fight",

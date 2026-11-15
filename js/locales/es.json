@@ -17,7 +17,8 @@
     "feature_types": "4 tipos de respuesta",
     "feature_questions": "8 escenarios",
     "time_estimate": "Toma alrededor de 2 minutos",
-    "boundary": "Esta actividad original es para reflexi?n privada. No diagnostica trauma, TEPT ni ninguna condici?n de salud."
+    "boundary": "Esta actividad original es para reflexi?n privada. No diagnostica trauma, TEPT ni ninguna condici?n de salud.",
+    "feature_metrics": "5 dimensiones"
   },
   "carousel": {
     "fight": "Lucha",

@@ -17,7 +17,8 @@
     "feature_types": "4 response types",
     "feature_questions": "8 scenarios",
     "time_estimate": "Takes about 2 minutes",
-    "boundary": "This author-created activity is for private reflection. It does not diagnose trauma, PTSD, or any health condition."
+    "boundary": "This author-created activity is for private reflection. It does not diagnose trauma, PTSD, or any health condition.",
+    "feature_metrics": "5 dimensions"
   },
   "carousel": {
     "fight": "Fight",
